@@ -1,0 +1,18 @@
+{
+  "technology": "Svelte",
+  "technologyId": "svelte",
+  "status": "manual_observation",
+  "runDate": "2026-05-25T20:23:34.672Z",
+  "sourceFilesInspected": [
+    "apps/svelte/index.html",
+    "apps/svelte/src/Catalog.svelte"
+  ],
+  "result": "compiled_component_or_wrapper_required",
+  "portabilityLevel": "medium",
+  "requiresFrameworkRuntime": true,
+  "evidence": [
+    "Component source is compiled by Svelte tooling.",
+    "Use outside Svelte is possible after compilation, but source-level reuse depends on Svelte build tooling.",
+    "Custom-element output is possible with additional configuration."
+  ]
+}

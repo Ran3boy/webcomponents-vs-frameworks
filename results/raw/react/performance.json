@@ -1,0 +1,41 @@
+{
+  "technology": "React",
+  "technologyId": "react",
+  "status": "measured",
+  "runDate": "2026-05-25T20:23:24.373Z",
+  "datasetSize": 500,
+  "browser": "chromium",
+  "os": "Windows_NT 10.0.26220",
+  "bundleSizeKb": 286.14,
+  "initialRenderMs": 539,
+  "searchUpdateMs": 61.32,
+  "filterUpdateMs": 58.74,
+  "sortUpdateMs": 59.04,
+  "fcpMs": 60,
+  "lcpMs": 60,
+  "tbtMs": 0,
+  "cls": 0,
+  "samples": {
+    "searchTimes": [
+      74.7,
+      61.1,
+      52.3,
+      55.9,
+      62.6
+    ],
+    "filterTimes": [
+      61.1,
+      62.5,
+      62.9,
+      46.9,
+      60.3
+    ],
+    "sortTimes": [
+      63.1,
+      61.9,
+      60.8,
+      47.2,
+      62.2
+    ]
+  }
+}

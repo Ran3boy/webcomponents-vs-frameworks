@@ -1,0 +1,26 @@
+{
+  "technology": "Svelte",
+  "technologyId": "svelte",
+  "status": "measured",
+  "runDate": "2026-05-25T20:23:33.644Z",
+  "conflictCss": "\n  .card {\n    background: red !important;\n    font-size: 40px !important;\n  }\n\n  button {\n    border: 10px solid black !important;\n  }\n\n  div {\n    box-sizing: content-box !important;\n  }\n",
+  "before": {
+    "cardBackground": "rgb(255, 255, 255)",
+    "cardFontSize": "16px",
+    "buttonBorderWidth": "1px",
+    "gridBoxSizing": "border-box"
+  },
+  "after": {
+    "cardBackground": "rgb(255, 0, 0)",
+    "cardFontSize": "40px",
+    "buttonBorderWidth": "10px",
+    "gridBoxSizing": "content-box"
+  },
+  "styleIsolation": "failed",
+  "changedProperties": [
+    "cardBackground",
+    "cardFontSize",
+    "buttonBorderWidth",
+    "gridBoxSizing"
+  ]
+}

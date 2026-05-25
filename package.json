@@ -1,0 +1,40 @@
+{
+  "name": "ui-technology-comparison-experiment",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "setup:data": "node tests/generate-datasets.js",
+    "build:apps": "npm run setup:data && npm run build --workspaces --if-present",
+    "test:performance": "node tests/run-performance-tests.js",
+    "test:style": "node tests/run-style-isolation-tests.js",
+    "test:integration": "node tests/run-integration-tests.js",
+    "collect-results": "node tests/collect-results.js",
+    "generate-charts": "node tests/generate-charts.js",
+    "sync-docs-data": "node tests/sync-docs-data.js",
+    "test:all": "npm run build:apps && npm run test:performance && npm run test:style && npm run test:integration && npm run collect-results && npm run generate-charts && npm run sync-docs-data",
+    "serve:docs": "vite --host 127.0.0.1 docs",
+    "preview:web-components": "npm run dev -w apps/web-components",
+    "preview:react": "npm run dev -w apps/react",
+    "preview:vue": "npm run dev -w apps/vue",
+    "preview:svelte": "npm run dev -w apps/svelte",
+    "preview:lit": "npm run dev -w apps/lit"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^5.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "playwright": "^1.49.1",
+    "vite": "^6.0.7"
+  },
+  "dependencies": {
+    "lit": "^3.2.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "svelte": "^5.15.0",
+    "vue": "^3.5.13"
+  }
+}

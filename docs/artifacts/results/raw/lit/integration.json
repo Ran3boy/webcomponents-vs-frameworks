@@ -1,0 +1,18 @@
+{
+  "technology": "Lit",
+  "technologyId": "lit",
+  "status": "manual_observation",
+  "runDate": "2026-05-25T20:23:34.672Z",
+  "sourceFilesInspected": [
+    "apps/lit/index.html",
+    "apps/lit/src/catalog-element.js"
+  ],
+  "result": "html/react/vue",
+  "portabilityLevel": "high",
+  "requiresFrameworkRuntime": false,
+  "evidence": [
+    "Lit component is a standards-based custom element.",
+    "It can be used from plain HTML after module loading.",
+    "React and Vue can host it as a native DOM custom element."
+  ]
+}

@@ -1,0 +1,72 @@
+export const scoringMatrix = [
+  {
+    "technology": "Web Components",
+    "K1": 3,
+    "K2": 3,
+    "K3": 3,
+    "K4": 1,
+    "K5": 3,
+    "K6": 3,
+    "K7": 1,
+    "K8": 2,
+    "K9": 3,
+    "K10": 1,
+    "status": "measured_and_justified"
+  },
+  {
+    "technology": "React",
+    "K1": 3,
+    "K2": 2,
+    "K3": 1,
+    "K4": 3,
+    "K5": 1,
+    "K6": 1,
+    "K7": 3,
+    "K8": 3,
+    "K9": 1,
+    "K10": 3,
+    "status": "measured_and_justified"
+  },
+  {
+    "technology": "Vue.js",
+    "K1": 3,
+    "K2": 2,
+    "K3": 1,
+    "K4": 3,
+    "K5": 2,
+    "K6": 1,
+    "K7": 3,
+    "K8": 2,
+    "K9": 2,
+    "K10": 3,
+    "status": "measured_and_justified"
+  },
+  {
+    "technology": "Svelte",
+    "K1": 3,
+    "K2": 2,
+    "K3": 1,
+    "K4": 3,
+    "K5": 2,
+    "K6": 2,
+    "K7": 2,
+    "K8": 2,
+    "K9": 2,
+    "K10": 2,
+    "status": "measured_and_justified"
+  },
+  {
+    "technology": "Lit",
+    "K1": 3,
+    "K2": 3,
+    "K3": 3,
+    "K4": 2,
+    "K5": 3,
+    "K6": 3,
+    "K7": 2,
+    "K8": 2,
+    "K9": 3,
+    "K10": 2,
+    "status": "measured_and_justified"
+  }
+];

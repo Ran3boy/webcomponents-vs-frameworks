@@ -1,0 +1,41 @@
+{
+  "technology": "Web Components",
+  "technologyId": "web-components",
+  "status": "measured",
+  "runDate": "2026-05-25T20:23:22.493Z",
+  "datasetSize": 500,
+  "browser": "chromium",
+  "os": "Windows_NT 10.0.26220",
+  "bundleSizeKb": 97.92,
+  "initialRenderMs": 554,
+  "searchUpdateMs": 60.06,
+  "filterUpdateMs": 55.96,
+  "sortUpdateMs": 58.9,
+  "fcpMs": 56,
+  "lcpMs": 56,
+  "tbtMs": 0,
+  "cls": 0,
+  "samples": {
+    "searchTimes": [
+      75.4,
+      59.2,
+      60.1,
+      50.2,
+      55.4
+    ],
+    "filterTimes": [
+      62.6,
+      61,
+      62.1,
+      47.3,
+      46.8
+    ],
+    "sortTimes": [
+      62.1,
+      62,
+      61,
+      62.1,
+      47.3
+    ]
+  }
+}

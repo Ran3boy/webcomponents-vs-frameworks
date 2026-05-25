@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Эксперимент: Web Components и фронтенд-фреймворки</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div>
+        <p class="eyebrow">ВКР / экспериментальный стенд</p>
+        <h1>Сравнительный анализ Web Components и современных фронтенд-фреймворков</h1>
+        <p class="lead">Сайт показывает не только итоговую матрицу, а цепочку доказательств: код реализаций, единые сценарии, raw JSON, processed CSV/JSON, диаграммы и обоснование баллов K1-K10.</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="band">
+        <div class="section-head">
+          <h2>Цель и методика</h2>
+          <p>Проверить, как шкала 0-3 из раздела 3.1 применяется на практике к одному UI-компоненту «Каталог элементов».</p>
+        </div>
+        <div class="facts">
+          <article><strong>Компонент</strong><span>Каталог карточек с поиском, фильтрацией, сортировкой и сбросом.</span></article>
+          <article><strong>Технологии</strong><span>Web Components, React, Vue.js, Svelte, Lit.</span></article>
+          <article><strong>Сценарии</strong><span>Рендеринг, обновление состояния, CSS-конфликты, переносимость, tooling.</span></article>
+        </div>
+      </section>
+
+      <section class="band">
+        <div class="section-head">
+          <h2>Демо сценария</h2>
+          <p>Этот блок демонстрирует поведение компонента. Сравниваемые реализации находятся в `apps/`.</p>
+        </div>
+        <div class="demo-toolbar">
+          <input id="demo-search" placeholder="Поиск по демо-каталогу" />
+          <select id="demo-category">
+            <option value="all">Все категории</option>
+          </select>
+          <select id="demo-sort">
+            <option value="rating">По рейтингу</option>
+            <option value="name">По названию</option>
+            <option value="complexity">По сложности</option>
+          </select>
+        </div>
+        <p id="demo-count" class="muted"></p>
+        <div id="demo-grid" class="demo-grid"></div>
+      </section>
+
+      <section class="band">
+        <div class="section-head">
+          <h2>Статус данных</h2>
+          <p id="data-status">Проверяется статус processed данных.</p>
+        </div>
+        <div id="environment" class="kv"></div>
+      </section>
+
+      <section class="band">
+        <div class="section-head">
+          <h2>Технические метрики</h2>
+          <p>Таблица строится из `results/processed/technical-metrics.json`.</p>
+        </div>
+        <div class="table-wrap">
+          <table id="metrics-table"></table>
+        </div>
+      </section>
+
+      <section class="band">
+        <div class="section-head">
+          <h2>Диаграммы</h2>
+          <p>SVG-файлы генерируются скриптом `npm run generate-charts` по processed данным.</p>
+        </div>
+        <div class="chart-grid">
+          <img src="./charts/bundle-size.svg" alt="Bundle size chart" />
+          <img src="./charts/initial-render.svg" alt="Initial render chart" />
+          <img src="./charts/update-time.svg" alt="Update time chart" />
+          <img src="./charts/scoring-heatmap.svg" alt="K1-K10 scoring heatmap" />
+        </div>
+      </section>
+
+      <section class="band">
+        <div class="section-head">
+          <h2>Матрица K1-K10</h2>
+          <p>Оценки не суммируются в общий рейтинг: они показывают профиль технологии.</p>
+        </div>
+        <div class="table-wrap">
+          <table id="scoring-table"></table>
+        </div>
+      </section>
+
+      <section class="band">
+        <div class="section-head">
+          <h2>Обоснование баллов</h2>
+          <p>Текст загружается из `results/processed/scoring-justification.md` через синхронизированный модуль данных.</p>
+        </div>
+        <pre id="justification"></pre>
+      </section>
+
+      <section class="band">
+        <div class="section-head">
+          <h2>Доказательная база</h2>
+          <p>Ссылки ведут к артефактам репозитория.</p>
+        </div>
+        <div class="links" id="evidence-links"></div>
+      </section>
+
+      <section class="band">
+        <div class="section-head">
+          <h2>Выводы по проектным профилям</h2>
+        </div>
+        <div class="facts">
+          <article><strong>Изолируемые виджеты</strong><span>Web Components и Lit рациональны, когда важны переносимость и защита от внешних CSS-конфликтов.</span></article>
+          <article><strong>Прикладные SPA</strong><span>React, Vue.js и Svelte удобны при активной работе с состоянием, tooling и UI-экосистемой.</span></article>
+          <article><strong>Гибридный подход</strong><span>Фреймворки могут собирать приложение, а Web Components/Lit - переносимые элементы дизайн-системы.</span></article>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

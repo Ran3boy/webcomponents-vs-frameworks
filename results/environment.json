@@ -1,0 +1,10 @@
+{
+  "runDate": "2026-05-25T20:23:34.959Z",
+  "os": "Windows_NT 10.0.26220 x64",
+  "nodeVersion": "v24.13.0",
+  "browser": "Chromium via Playwright",
+  "browserVersion": "Recorded by installed Playwright browser runtime",
+  "datasetSize": 500,
+  "testRunner": "Node.js scripts + Playwright",
+  "notes": "Run with npm run test:all; performance values are collected from built applications served locally."
+}

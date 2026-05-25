@@ -1,0 +1,9 @@
+{
+  "technology": "Lit",
+  "technologyId": "lit",
+  "status": "manual_observation",
+  "runDate": "2026-05-25T20:23:34.672Z",
+  "packageFile": "apps/lit/package.json",
+  "buildCommand": "npm run build -w apps/lit",
+  "notes": "Tooling score is derived from package scripts, framework conventions, and source structure."
+}

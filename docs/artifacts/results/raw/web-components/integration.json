@@ -1,0 +1,18 @@
+{
+  "technology": "Web Components",
+  "technologyId": "web-components",
+  "status": "manual_observation",
+  "runDate": "2026-05-25T20:23:34.669Z",
+  "sourceFilesInspected": [
+    "apps/web-components/index.html",
+    "apps/web-components/src/catalog-component.js"
+  ],
+  "result": "html/react/vue",
+  "portabilityLevel": "high",
+  "requiresFrameworkRuntime": false,
+  "evidence": [
+    "Custom element can be used from plain HTML after loading its JavaScript module.",
+    "React and Vue can render custom elements as native DOM tags.",
+    "Shadow DOM keeps internal structure independent from host application."
+  ]
+}

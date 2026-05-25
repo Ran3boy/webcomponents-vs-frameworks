@@ -1,0 +1,9 @@
+{
+  "technology": "React",
+  "status": "measured_via_playwright_navigation_timing",
+  "note": "The experiment records browser Performance API values instead of running Lighthouse CLI.",
+  "fcpMs": 60,
+  "lcpMs": 60,
+  "tbtMs": 0,
+  "cls": 0
+}

@@ -1,0 +1,18 @@
+{
+  "technology": "React",
+  "technologyId": "react",
+  "status": "manual_observation",
+  "runDate": "2026-05-25T20:23:34.671Z",
+  "sourceFilesInspected": [
+    "apps/react/index.html",
+    "apps/react/src/Catalog.jsx"
+  ],
+  "result": "react_runtime_required",
+  "portabilityLevel": "medium",
+  "requiresFrameworkRuntime": true,
+  "evidence": [
+    "Component source is a React function component.",
+    "Use outside React requires React runtime or a wrapper/export as Web Component.",
+    "Integration is strong inside React UI-kit ecosystems."
+  ]
+}

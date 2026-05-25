@@ -1,0 +1,902 @@
+[
+  {
+    "id": "catalog-0001",
+    "title": "Adaptive card 0001",
+    "category": "Components",
+    "description": "Reusable interface element for dashboard scenarios",
+    "complexity": 1,
+    "rating": 3.5,
+    "updated": "2026-01-01"
+  },
+  {
+    "id": "catalog-0002",
+    "title": "Data grid 0002",
+    "category": "Data",
+    "description": "Interactive block with stateful filtering and sorting",
+    "complexity": 2,
+    "rating": 3.7,
+    "updated": "2026-02-02"
+  },
+  {
+    "id": "catalog-0003",
+    "title": "Search panel 0003",
+    "category": "Forms",
+    "description": "Compact UI pattern for production applications",
+    "complexity": 3,
+    "rating": 3.9,
+    "updated": "2026-03-03"
+  },
+  {
+    "id": "catalog-0004",
+    "title": "Filter chip 0004",
+    "category": "Navigation",
+    "description": "Component prepared for design-system integration",
+    "complexity": 4,
+    "rating": 4.1,
+    "updated": "2026-04-04"
+  },
+  {
+    "id": "catalog-0005",
+    "title": "Modal window 0005",
+    "category": "Feedback",
+    "description": "Element with keyboard-friendly controls and stable layout",
+    "complexity": 5,
+    "rating": 4.3,
+    "updated": "2026-05-05"
+  },
+  {
+    "id": "catalog-0006",
+    "title": "Progress indicator 0006",
+    "category": "Components",
+    "description": "Reusable interface element for dashboard scenarios",
+    "complexity": 1,
+    "rating": 4.5,
+    "updated": "2026-06-06"
+  },
+  {
+    "id": "catalog-0007",
+    "title": "Navigation rail 0007",
+    "category": "Data",
+    "description": "Interactive block with stateful filtering and sorting",
+    "complexity": 2,
+    "rating": 4.7,
+    "updated": "2026-07-07"
+  },
+  {
+    "id": "catalog-0008",
+    "title": "Form field 0008",
+    "category": "Forms",
+    "description": "Compact UI pattern for production applications",
+    "complexity": 3,
+    "rating": 4.9,
+    "updated": "2026-08-08"
+  },
+  {
+    "id": "catalog-0009",
+    "title": "Toast message 0009",
+    "category": "Navigation",
+    "description": "Component prepared for design-system integration",
+    "complexity": 4,
+    "rating": 3.6,
+    "updated": "2026-09-09"
+  },
+  {
+    "id": "catalog-0010",
+    "title": "Tree view 0010",
+    "category": "Feedback",
+    "description": "Element with keyboard-friendly controls and stable layout",
+    "complexity": 5,
+    "rating": 3.8,
+    "updated": "2026-10-10"
+  },
+  {
+    "id": "catalog-0011",
+    "title": "Adaptive card 0011",
+    "category": "Components",
+    "description": "Reusable interface element for dashboard scenarios",
+    "complexity": 1,
+    "rating": 4,
+    "updated": "2026-11-11"
+  },
+  {
+    "id": "catalog-0012",
+    "title": "Data grid 0012",
+    "category": "Data",
+    "description": "Interactive block with stateful filtering and sorting",
+    "complexity": 2,
+    "rating": 4.2,
+    "updated": "2026-12-12"
+  },
+  {
+    "id": "catalog-0013",
+    "title": "Search panel 0013",
+    "category": "Forms",
+    "description": "Compact UI pattern for production applications",
+    "complexity": 3,
+    "rating": 4.4,
+    "updated": "2026-01-13"
+  },
+  {
+    "id": "catalog-0014",
+    "title": "Filter chip 0014",
+    "category": "Navigation",
+    "description": "Component prepared for design-system integration",
+    "complexity": 4,
+    "rating": 4.6,
+    "updated": "2026-02-14"
+  },
+  {
+    "id": "catalog-0015",
+    "title": "Modal window 0015",
+    "category": "Feedback",
+    "description": "Element with keyboard-friendly controls and stable layout",
+    "complexity": 5,
+    "rating": 4.8,
+    "updated": "2026-03-15"
+  },
+  {
+    "id": "catalog-0016",
+    "title": "Progress indicator 0016",
+    "category": "Components",
+    "description": "Reusable interface element for dashboard scenarios",
+    "complexity": 1,
+    "rating": 3.5,
+    "updated": "2026-04-16"
+  },
+  {
+    "id": "catalog-0017",
+    "title": "Navigation rail 0017",
+    "category": "Data",
+    "description": "Interactive block with stateful filtering and sorting",
+    "complexity": 2,
+    "rating": 3.7,
+    "updated": "2026-05-17"
+  },
+  {
+    "id": "catalog-0018",
+    "title": "Form field 0018",
+    "category": "Forms",
+    "description": "Compact UI pattern for production applications",
+    "complexity": 3,
+    "rating": 3.9,
+    "updated": "2026-06-18"
+  },
+  {
+    "id": "catalog-0019",
+    "title": "Toast message 0019",
+    "category": "Navigation",
+    "description": "Component prepared for design-system integration",
+    "complexity": 4,
+    "rating": 4.1,
+    "updated": "2026-07-19"
+  },
+  {
+    "id": "catalog-0020",
+    "title": "Tree view 0020",
+    "category": "Feedback",
+    "description": "Element with keyboard-friendly controls and stable layout",
+    "complexity": 5,
+    "rating": 4.3,
+    "updated": "2026-08-20"
+  },
+  {
+    "id": "catalog-0021",
+    "title": "Adaptive card 0021",
+    "category": "Components",
+    "description": "Reusable interface element for dashboard scenarios",
+    "complexity": 1,
+    "rating": 4.5,
+    "updated": "2026-09-21"
+  },
+  {
+    "id": "catalog-0022",
+    "title": "Data grid 0022",
+    "category": "Data",
+    "description": "Interactive block with stateful filtering and sorting",
+    "complexity": 2,
+    "rating": 4.7,
+    "updated": "2026-10-22"
+  },
+  {
+    "id": "catalog-0023",
+    "title": "Search panel 0023",
+    "category": "Forms",
+    "description": "Compact UI pattern for production applications",
+    "complexity": 3,
+    "rating": 4.9,
+    "updated": "2026-11-23"
+  },
+  {
+    "id": "catalog-0024",
+    "title": "Filter chip 0024",
+    "category": "Navigation",
+    "description": "Component prepared for design-system integration",
+    "complexity": 4,
+    "rating": 3.6,
+    "updated": "2026-12-24"
+  },
+  {
+    "id": "catalog-0025",
+    "title": "Modal window 0025",
+    "category": "Feedback",
+    "description": "Element with keyboard-friendly controls and stable layout",
+    "complexity": 5,
+    "rating": 3.8,
+    "updated": "2026-01-25"
+  },
+  {
+    "id": "catalog-0026",
+    "title": "Progress indicator 0026",
+    "category": "Components",
+    "description": "Reusable interface element for dashboard scenarios",
+    "complexity": 1,
+    "rating": 4,
+    "updated": "2026-02-26"
+  },
+  {
+    "id": "catalog-0027",
+    "title": "Navigation rail 0027",
+    "category": "Data",
+    "description": "Interactive block with stateful filtering and sorting",
+    "complexity": 2,
+    "rating": 4.2,
+    "updated": "2026-03-27"
+  },
+  {
+    "id": "catalog-0028",
+    "title": "Form field 0028",
+    "category": "Forms",
+    "description": "Compact UI pattern for production applications",
+    "complexity": 3,
+    "rating": 4.4,
+    "updated": "2026-04-01"
+  },
+  {
+    "id": "catalog-0029",
+    "title": "Toast message 0029",
+    "category": "Navigation",
+    "description": "Component prepared for design-system integration",
+    "complexity": 4,
+    "rating": 4.6,
+    "updated": "2026-05-02"
+  },
+  {
+    "id": "catalog-0030",
+    "title": "Tree view 0030",
+    "category": "Feedback",
+    "description": "Element with keyboard-friendly controls and stable layout",
+    "complexity": 5,
+    "rating": 4.8,
+    "updated": "2026-06-03"
+  },
+  {
+    "id": "catalog-0031",
+    "title": "Adaptive card 0031",
+    "category": "Components",
+    "description": "Reusable interface element for dashboard scenarios",
+    "complexity": 1,
+    "rating": 3.5,
+    "updated": "2026-07-04"
+  },
+  {
+    "id": "catalog-0032",
+    "title": "Data grid 0032",
+    "category": "Data",
+    "description": "Interactive block with stateful filtering and sorting",
+    "complexity": 2,
+    "rating": 3.7,
+    "updated": "2026-08-05"
+  },
+  {
+    "id": "catalog-0033",
+    "title": "Search panel 0033",
+    "category": "Forms",
+    "description": "Compact UI pattern for production applications",
+    "complexity": 3,
+    "rating": 3.9,
+    "updated": "2026-09-06"
+  },
+  {
+    "id": "catalog-0034",
+    "title": "Filter chip 0034",
+    "category": "Navigation",
+    "description": "Component prepared for design-system integration",
+    "complexity": 4,
+    "rating": 4.1,
+    "updated": "2026-10-07"
+  },
+  {
+    "id": "catalog-0035",
+    "title": "Modal window 0035",
+    "category": "Feedback",
+    "description": "Element with keyboard-friendly controls and stable layout",
+    "complexity": 5,
+    "rating": 4.3,
+    "updated": "2026-11-08"
+  },
+  {
+    "id": "catalog-0036",
+    "title": "Progress indicator 0036",
+    "category": "Components",
+    "description": "Reusable interface element for dashboard scenarios",
+    "complexity": 1,
+    "rating": 4.5,
+    "updated": "2026-12-09"
+  },
+  {
+    "id": "catalog-0037",
+    "title": "Navigation rail 0037",
+    "category": "Data",
+    "description": "Interactive block with stateful filtering and sorting",
+    "complexity": 2,
+    "rating": 4.7,
+    "updated": "2026-01-10"
+  },
+  {
+    "id": "catalog-0038",
+    "title": "Form field 0038",
+    "category": "Forms",
+    "description": "Compact UI pattern for production applications",
+    "complexity": 3,
+    "rating": 4.9,
+    "updated": "2026-02-11"
+  },
+  {
+    "id": "catalog-0039",
+    "title": "Toast message 0039",
+    "category": "Navigation",
+    "description": "Component prepared for design-system integration",
+    "complexity": 4,
+    "rating": 3.6,
+    "updated": "2026-03-12"
+  },
+  {
+    "id": "catalog-0040",
+    "title": "Tree view 0040",
+    "category": "Feedback",
+    "description": "Element with keyboard-friendly controls and stable layout",
+    "complexity": 5,
+    "rating": 3.8,
+    "updated": "2026-04-13"
+  },
+  {
+    "id": "catalog-0041",
+    "title": "Adaptive card 0041",
+    "category": "Components",
+    "description": "Reusable interface element for dashboard scenarios",
+    "complexity": 1,
+    "rating": 4,
+    "updated": "2026-05-14"
+  },
+  {
+    "id": "catalog-0042",
+    "title": "Data grid 0042",
+    "category": "Data",
+    "description": "Interactive block with stateful filtering and sorting",
+    "complexity": 2,
+    "rating": 4.2,
+    "updated": "2026-06-15"
+  },
+  {
+    "id": "catalog-0043",
+    "title": "Search panel 0043",
+    "category": "Forms",
+    "description": "Compact UI pattern for production applications",
+    "complexity": 3,
+    "rating": 4.4,
+    "updated": "2026-07-16"
+  },
+  {
+    "id": "catalog-0044",
+    "title": "Filter chip 0044",
+    "category": "Navigation",
+    "description": "Component prepared for design-system integration",
+    "complexity": 4,
+    "rating": 4.6,
+    "updated": "2026-08-17"
+  },
+  {
+    "id": "catalog-0045",
+    "title": "Modal window 0045",
+    "category": "Feedback",
+    "description": "Element with keyboard-friendly controls and stable layout",
+    "complexity": 5,
+    "rating": 4.8,
+    "updated": "2026-09-18"
+  },
+  {
+    "id": "catalog-0046",
+    "title": "Progress indicator 0046",
+    "category": "Components",
+    "description": "Reusable interface element for dashboard scenarios",
+    "complexity": 1,
+    "rating": 3.5,
+    "updated": "2026-10-19"
+  },
+  {
+    "id": "catalog-0047",
+    "title": "Navigation rail 0047",
+    "category": "Data",
+    "description": "Interactive block with stateful filtering and sorting",
+    "complexity": 2,
+    "rating": 3.7,
+    "updated": "2026-11-20"
+  },
+  {
+    "id": "catalog-0048",
+    "title": "Form field 0048",
+    "category": "Forms",
+    "description": "Compact UI pattern for production applications",
+    "complexity": 3,
+    "rating": 3.9,
+    "updated": "2026-12-21"
+  },
+  {
+    "id": "catalog-0049",
+    "title": "Toast message 0049",
+    "category": "Navigation",
+    "description": "Component prepared for design-system integration",
+    "complexity": 4,
+    "rating": 4.1,
+    "updated": "2026-01-22"
+  },
+  {
+    "id": "catalog-0050",
+    "title": "Tree view 0050",
+    "category": "Feedback",
+    "description": "Element with keyboard-friendly controls and stable layout",
+    "complexity": 5,
+    "rating": 4.3,
+    "updated": "2026-02-23"
+  },
+  {
+    "id": "catalog-0051",
+    "title": "Adaptive card 0051",
+    "category": "Components",
+    "description": "Reusable interface element for dashboard scenarios",
+    "complexity": 1,
+    "rating": 4.5,
+    "updated": "2026-03-24"
+  },
+  {
+    "id": "catalog-0052",
+    "title": "Data grid 0052",
+    "category": "Data",
+    "description": "Interactive block with stateful filtering and sorting",
+    "complexity": 2,
+    "rating": 4.7,
+    "updated": "2026-04-25"
+  },
+  {
+    "id": "catalog-0053",
+    "title": "Search panel 0053",
+    "category": "Forms",
+    "description": "Compact UI pattern for production applications",
+    "complexity": 3,
+    "rating": 4.9,
+    "updated": "2026-05-26"
+  },
+  {
+    "id": "catalog-0054",
+    "title": "Filter chip 0054",
+    "category": "Navigation",
+    "description": "Component prepared for design-system integration",
+    "complexity": 4,
+    "rating": 3.6,
+    "updated": "2026-06-27"
+  },
+  {
+    "id": "catalog-0055",
+    "title": "Modal window 0055",
+    "category": "Feedback",
+    "description": "Element with keyboard-friendly controls and stable layout",
+    "complexity": 5,
+    "rating": 3.8,
+    "updated": "2026-07-01"
+  },
+  {
+    "id": "catalog-0056",
+    "title": "Progress indicator 0056",
+    "category": "Components",
+    "description": "Reusable interface element for dashboard scenarios",
+    "complexity": 1,
+    "rating": 4,
+    "updated": "2026-08-02"
+  },
+  {
+    "id": "catalog-0057",
+    "title": "Navigation rail 0057",
+    "category": "Data",
+    "description": "Interactive block with stateful filtering and sorting",
+    "complexity": 2,
+    "rating": 4.2,
+    "updated": "2026-09-03"
+  },
+  {
+    "id": "catalog-0058",
+    "title": "Form field 0058",
+    "category": "Forms",
+    "description": "Compact UI pattern for production applications",
+    "complexity": 3,
+    "rating": 4.4,
+    "updated": "2026-10-04"
+  },
+  {
+    "id": "catalog-0059",
+    "title": "Toast message 0059",
+    "category": "Navigation",
+    "description": "Component prepared for design-system integration",
+    "complexity": 4,
+    "rating": 4.6,
+    "updated": "2026-11-05"
+  },
+  {
+    "id": "catalog-0060",
+    "title": "Tree view 0060",
+    "category": "Feedback",
+    "description": "Element with keyboard-friendly controls and stable layout",
+    "complexity": 5,
+    "rating": 4.8,
+    "updated": "2026-12-06"
+  },
+  {
+    "id": "catalog-0061",
+    "title": "Adaptive card 0061",
+    "category": "Components",
+    "description": "Reusable interface element for dashboard scenarios",
+    "complexity": 1,
+    "rating": 3.5,
+    "updated": "2026-01-07"
+  },
+  {
+    "id": "catalog-0062",
+    "title": "Data grid 0062",
+    "category": "Data",
+    "description": "Interactive block with stateful filtering and sorting",
+    "complexity": 2,
+    "rating": 3.7,
+    "updated": "2026-02-08"
+  },
+  {
+    "id": "catalog-0063",
+    "title": "Search panel 0063",
+    "category": "Forms",
+    "description": "Compact UI pattern for production applications",
+    "complexity": 3,
+    "rating": 3.9,
+    "updated": "2026-03-09"
+  },
+  {
+    "id": "catalog-0064",
+    "title": "Filter chip 0064",
+    "category": "Navigation",
+    "description": "Component prepared for design-system integration",
+    "complexity": 4,
+    "rating": 4.1,
+    "updated": "2026-04-10"
+  },
+  {
+    "id": "catalog-0065",
+    "title": "Modal window 0065",
+    "category": "Feedback",
+    "description": "Element with keyboard-friendly controls and stable layout",
+    "complexity": 5,
+    "rating": 4.3,
+    "updated": "2026-05-11"
+  },
+  {
+    "id": "catalog-0066",
+    "title": "Progress indicator 0066",
+    "category": "Components",
+    "description": "Reusable interface element for dashboard scenarios",
+    "complexity": 1,
+    "rating": 4.5,
+    "updated": "2026-06-12"
+  },
+  {
+    "id": "catalog-0067",
+    "title": "Navigation rail 0067",
+    "category": "Data",
+    "description": "Interactive block with stateful filtering and sorting",
+    "complexity": 2,
+    "rating": 4.7,
+    "updated": "2026-07-13"
+  },
+  {
+    "id": "catalog-0068",
+    "title": "Form field 0068",
+    "category": "Forms",
+    "description": "Compact UI pattern for production applications",
+    "complexity": 3,
+    "rating": 4.9,
+    "updated": "2026-08-14"
+  },
+  {
+    "id": "catalog-0069",
+    "title": "Toast message 0069",
+    "category": "Navigation",
+    "description": "Component prepared for design-system integration",
+    "complexity": 4,
+    "rating": 3.6,
+    "updated": "2026-09-15"
+  },
+  {
+    "id": "catalog-0070",
+    "title": "Tree view 0070",
+    "category": "Feedback",
+    "description": "Element with keyboard-friendly controls and stable layout",
+    "complexity": 5,
+    "rating": 3.8,
+    "updated": "2026-10-16"
+  },
+  {
+    "id": "catalog-0071",
+    "title": "Adaptive card 0071",
+    "category": "Components",
+    "description": "Reusable interface element for dashboard scenarios",
+    "complexity": 1,
+    "rating": 4,
+    "updated": "2026-11-17"
+  },
+  {
+    "id": "catalog-0072",
+    "title": "Data grid 0072",
+    "category": "Data",
+    "description": "Interactive block with stateful filtering and sorting",
+    "complexity": 2,
+    "rating": 4.2,
+    "updated": "2026-12-18"
+  },
+  {
+    "id": "catalog-0073",
+    "title": "Search panel 0073",
+    "category": "Forms",
+    "description": "Compact UI pattern for production applications",
+    "complexity": 3,
+    "rating": 4.4,
+    "updated": "2026-01-19"
+  },
+  {
+    "id": "catalog-0074",
+    "title": "Filter chip 0074",
+    "category": "Navigation",
+    "description": "Component prepared for design-system integration",
+    "complexity": 4,
+    "rating": 4.6,
+    "updated": "2026-02-20"
+  },
+  {
+    "id": "catalog-0075",
+    "title": "Modal window 0075",
+    "category": "Feedback",
+    "description": "Element with keyboard-friendly controls and stable layout",
+    "complexity": 5,
+    "rating": 4.8,
+    "updated": "2026-03-21"
+  },
+  {
+    "id": "catalog-0076",
+    "title": "Progress indicator 0076",
+    "category": "Components",
+    "description": "Reusable interface element for dashboard scenarios",
+    "complexity": 1,
+    "rating": 3.5,
+    "updated": "2026-04-22"
+  },
+  {
+    "id": "catalog-0077",
+    "title": "Navigation rail 0077",
+    "category": "Data",
+    "description": "Interactive block with stateful filtering and sorting",
+    "complexity": 2,
+    "rating": 3.7,
+    "updated": "2026-05-23"
+  },
+  {
+    "id": "catalog-0078",
+    "title": "Form field 0078",
+    "category": "Forms",
+    "description": "Compact UI pattern for production applications",
+    "complexity": 3,
+    "rating": 3.9,
+    "updated": "2026-06-24"
+  },
+  {
+    "id": "catalog-0079",
+    "title": "Toast message 0079",
+    "category": "Navigation",
+    "description": "Component prepared for design-system integration",
+    "complexity": 4,
+    "rating": 4.1,
+    "updated": "2026-07-25"
+  },
+  {
+    "id": "catalog-0080",
+    "title": "Tree view 0080",
+    "category": "Feedback",
+    "description": "Element with keyboard-friendly controls and stable layout",
+    "complexity": 5,
+    "rating": 4.3,
+    "updated": "2026-08-26"
+  },
+  {
+    "id": "catalog-0081",
+    "title": "Adaptive card 0081",
+    "category": "Components",
+    "description": "Reusable interface element for dashboard scenarios",
+    "complexity": 1,
+    "rating": 4.5,
+    "updated": "2026-09-27"
+  },
+  {
+    "id": "catalog-0082",
+    "title": "Data grid 0082",
+    "category": "Data",
+    "description": "Interactive block with stateful filtering and sorting",
+    "complexity": 2,
+    "rating": 4.7,
+    "updated": "2026-10-01"
+  },
+  {
+    "id": "catalog-0083",
+    "title": "Search panel 0083",
+    "category": "Forms",
+    "description": "Compact UI pattern for production applications",
+    "complexity": 3,
+    "rating": 4.9,
+    "updated": "2026-11-02"
+  },
+  {
+    "id": "catalog-0084",
+    "title": "Filter chip 0084",
+    "category": "Navigation",
+    "description": "Component prepared for design-system integration",
+    "complexity": 4,
+    "rating": 3.6,
+    "updated": "2026-12-03"
+  },
+  {
+    "id": "catalog-0085",
+    "title": "Modal window 0085",
+    "category": "Feedback",
+    "description": "Element with keyboard-friendly controls and stable layout",
+    "complexity": 5,
+    "rating": 3.8,
+    "updated": "2026-01-04"
+  },
+  {
+    "id": "catalog-0086",
+    "title": "Progress indicator 0086",
+    "category": "Components",
+    "description": "Reusable interface element for dashboard scenarios",
+    "complexity": 1,
+    "rating": 4,
+    "updated": "2026-02-05"
+  },
+  {
+    "id": "catalog-0087",
+    "title": "Navigation rail 0087",
+    "category": "Data",
+    "description": "Interactive block with stateful filtering and sorting",
+    "complexity": 2,
+    "rating": 4.2,
+    "updated": "2026-03-06"
+  },
+  {
+    "id": "catalog-0088",
+    "title": "Form field 0088",
+    "category": "Forms",
+    "description": "Compact UI pattern for production applications",
+    "complexity": 3,
+    "rating": 4.4,
+    "updated": "2026-04-07"
+  },
+  {
+    "id": "catalog-0089",
+    "title": "Toast message 0089",
+    "category": "Navigation",
+    "description": "Component prepared for design-system integration",
+    "complexity": 4,
+    "rating": 4.6,
+    "updated": "2026-05-08"
+  },
+  {
+    "id": "catalog-0090",
+    "title": "Tree view 0090",
+    "category": "Feedback",
+    "description": "Element with keyboard-friendly controls and stable layout",
+    "complexity": 5,
+    "rating": 4.8,
+    "updated": "2026-06-09"
+  },
+  {
+    "id": "catalog-0091",
+    "title": "Adaptive card 0091",
+    "category": "Components",
+    "description": "Reusable interface element for dashboard scenarios",
+    "complexity": 1,
+    "rating": 3.5,
+    "updated": "2026-07-10"
+  },
+  {
+    "id": "catalog-0092",
+    "title": "Data grid 0092",
+    "category": "Data",
+    "description": "Interactive block with stateful filtering and sorting",
+    "complexity": 2,
+    "rating": 3.7,
+    "updated": "2026-08-11"
+  },
+  {
+    "id": "catalog-0093",
+    "title": "Search panel 0093",
+    "category": "Forms",
+    "description": "Compact UI pattern for production applications",
+    "complexity": 3,
+    "rating": 3.9,
+    "updated": "2026-09-12"
+  },
+  {
+    "id": "catalog-0094",
+    "title": "Filter chip 0094",
+    "category": "Navigation",
+    "description": "Component prepared for design-system integration",
+    "complexity": 4,
+    "rating": 4.1,
+    "updated": "2026-10-13"
+  },
+  {
+    "id": "catalog-0095",
+    "title": "Modal window 0095",
+    "category": "Feedback",
+    "description": "Element with keyboard-friendly controls and stable layout",
+    "complexity": 5,
+    "rating": 4.3,
+    "updated": "2026-11-14"
+  },
+  {
+    "id": "catalog-0096",
+    "title": "Progress indicator 0096",
+    "category": "Components",
+    "description": "Reusable interface element for dashboard scenarios",
+    "complexity": 1,
+    "rating": 4.5,
+    "updated": "2026-12-15"
+  },
+  {
+    "id": "catalog-0097",
+    "title": "Navigation rail 0097",
+    "category": "Data",
+    "description": "Interactive block with stateful filtering and sorting",
+    "complexity": 2,
+    "rating": 4.7,
+    "updated": "2026-01-16"
+  },
+  {
+    "id": "catalog-0098",
+    "title": "Form field 0098",
+    "category": "Forms",
+    "description": "Compact UI pattern for production applications",
+    "complexity": 3,
+    "rating": 4.9,
+    "updated": "2026-02-17"
+  },
+  {
+    "id": "catalog-0099",
+    "title": "Toast message 0099",
+    "category": "Navigation",
+    "description": "Component prepared for design-system integration",
+    "complexity": 4,
+    "rating": 3.6,
+    "updated": "2026-03-18"
+  },
+  {
+    "id": "catalog-0100",
+    "title": "Tree view 0100",
+    "category": "Feedback",
+    "description": "Element with keyboard-friendly controls and stable layout",
+    "complexity": 5,
+    "rating": 3.8,
+    "updated": "2026-04-19"
+  }
+]

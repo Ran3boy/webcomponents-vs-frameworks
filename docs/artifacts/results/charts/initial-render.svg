@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="360" role="img" aria-label="Initial render, ms">
+    <rect width="100%" height="100%" fill="#ffffff" />
+    <text x="20" y="28" font-size="20" font-weight="700" fill="#0f172a">Initial render, ms</text>
+    
+      <text x="20" y="72" font-size="14" fill="#334155">Web Components</text>
+      <rect x="150" y="48" width="674" height="28" rx="4" fill="#0f766e" />
+      <text x="832" y="68" font-size="13" fill="#334155">554 ms</text>
+      <text x="20" y="116" font-size="14" fill="#334155">React</text>
+      <rect x="150" y="92" width="655.7509025270758" height="28" rx="4" fill="#0f766e" />
+      <text x="813.7509025270758" y="112" font-size="13" fill="#334155">539 ms</text>
+      <text x="20" y="160" font-size="14" fill="#334155">Vue.js</text>
+      <rect x="150" y="136" width="660.6173285198556" height="28" rx="4" fill="#0f766e" />
+      <text x="818.6173285198556" y="156" font-size="13" fill="#334155">543 ms</text>
+      <text x="20" y="204" font-size="14" fill="#334155">Svelte</text>
+      <rect x="150" y="180" width="653.3176895306859" height="28" rx="4" fill="#0f766e" />
+      <text x="811.3176895306859" y="200" font-size="13" fill="#334155">537 ms</text>
+      <text x="20" y="248" font-size="14" fill="#334155">Lit</text>
+      <rect x="150" y="224" width="639.9350180505415" height="28" rx="4" fill="#0f766e" />
+      <text x="797.9350180505415" y="244" font-size="13" fill="#334155">526 ms</text>
+  </svg>

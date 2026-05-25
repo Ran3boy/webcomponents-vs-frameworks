@@ -1,0 +1,18 @@
+{
+  "technology": "Vue.js",
+  "technologyId": "vue",
+  "status": "manual_observation",
+  "runDate": "2026-05-25T20:23:34.671Z",
+  "sourceFilesInspected": [
+    "apps/vue/index.html",
+    "apps/vue/src/Catalog.vue"
+  ],
+  "result": "vue_runtime_required",
+  "portabilityLevel": "medium",
+  "requiresFrameworkRuntime": true,
+  "evidence": [
+    "Component source is a Vue single-file component.",
+    "Use outside Vue requires Vue runtime, build step, or custom-element compilation.",
+    "Integration is strong inside Vue application architecture."
+  ]
+}

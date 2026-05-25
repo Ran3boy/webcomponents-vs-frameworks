@@ -1,0 +1,6 @@
+technology,bundle_size_kb,initial_render_ms,search_update_ms,filter_update_ms,sort_update_ms,fcp_ms,lcp_ms,tbt_ms,cls,style_isolation,integration_result,status
+Web Components,97.92,554,60.06,55.96,58.9,56,56,0,0,passed,html/react/vue,measured
+React,286.14,539,61.32,58.74,59.04,60,60,0,0,failed,react_runtime_required,measured
+Vue.js,158.97,543,63.06,51.8,55.32,48,48,0,0,failed,vue_runtime_required,measured
+Svelte,135.17,537,62.92,52.66,58.68,64,64,0,0,failed,compiled_component_or_wrapper_required,measured
+Lit,114.07,526,59.08,59.2,58.24,44,44,0,0,passed,html/react/vue,measured
