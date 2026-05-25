@@ -130,16 +130,16 @@ writeJson(path.join(root, "results", "environment.json"), {
 
 function criterionSource(technology, criterion, score, metricRow) {
   const base = {
-    K1: "Source component structure in apps/",
-    K2: "DOM boundary and framework/component model in source code",
-    K3: `Style conflict result: ${metricRow.style_isolation}`,
-    K4: "Search/filter/sort implementation and update-time measurements",
-    K5: `Integration result: ${metricRow.integration_result}`,
-    K6: "Runtime and ecosystem dependency observation",
-    K7: "Build scripts, framework devtools and package structure",
-    K8: "Architecture conventions and scaling pattern",
-    K9: `Bundle/render/update metrics from technical-metrics.json`,
-    K10: "UI ecosystem, UI-kit compatibility, a11y and i18n maturity"
+    K1: "структура компонента и возможность повторного использования в apps/",
+    K2: "граница DOM и модель инкапсуляции в исходном коде",
+    K3: `результат проверки конфликтующих стилей: ${metricRow.style_isolation}`,
+    K4: "реализация поиска, фильтрации, сортировки и измерения времени обновления",
+    K5: `результат проверки переносимости: ${metricRow.integration_result}`,
+    K6: "наблюдаемая зависимость от runtime и экосистемы",
+    K7: "скрипты сборки, tooling и структура package.json",
+    K8: "архитектурные соглашения и масштабируемость процесса разработки",
+    K9: "размер сборки, первичный рендеринг и время обновлений из technical-metrics.json",
+    K10: "совместимость с UI-экосистемой, UI-kit, a11y и i18n"
   }[criterion];
   return `- ${criterion}: ${score} балл(а). Основание: ${base}. Артефакты: apps/, results/raw/${technologies.find((tech) => tech.name === technology).id}/, results/processed/technical-metrics.json.`;
 }

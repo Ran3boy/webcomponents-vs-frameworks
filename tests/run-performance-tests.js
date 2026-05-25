@@ -62,7 +62,7 @@ async function measureTechnology(browser, tech) {
   const sortTimes = [];
   for (let i = 0; i < 5; i += 1) {
     searchTimes.push(await measureUpdate(page, () => page.locator("[data-testid='search-input']").fill(`grid ${i}`)));
-    filterTimes.push(await measureUpdate(page, () => page.locator("[data-testid='category-filter']").selectOption("Data")));
+    filterTimes.push(await measureUpdate(page, () => page.locator("[data-testid='category-filter']").selectOption("Данные")));
     sortTimes.push(await measureUpdate(page, () => page.locator("[data-testid='sort-select']").selectOption(i % 2 ? "name" : "complexity")));
     await page.locator("[data-testid='reset-button']").click();
   }

@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from "react";
 import dataset from "../../../data/dataset-500.json";
 
-const categories = ["Components", "Data", "Forms", "Navigation", "Feedback"];
+const categories = ["Компоненты", "Данные", "Формы", "Навигация", "Обратная связь"];
 
 export function Catalog() {
   const [query, setQuery] = useState("");
@@ -52,8 +52,8 @@ export function Catalog() {
             <p>{item.description}</p>
             <div className="meta">
               <span className="pill">{item.category}</span>
-              <span>Rating: {item.rating}</span>
-              <span>Complexity: {item.complexity}</span>
+              <span>Рейтинг: {item.rating}</span>
+              <span>Сложность: {item.complexity}</span>
             </div>
           </article>
         ))}

@@ -2,7 +2,7 @@
   "technology": "Web Components",
   "technologyId": "web-components",
   "status": "manual_observation",
-  "runDate": "2026-05-25T20:33:19.315Z",
+  "runDate": "2026-05-25T21:02:39.225Z",
   "sourceFilesInspected": [
     "apps/web-components/index.html",
     "apps/web-components/src/catalog-component.js"

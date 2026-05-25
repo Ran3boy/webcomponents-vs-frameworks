@@ -7,16 +7,16 @@ const dataDir = path.join(root, "data");
 fs.mkdirSync(dataDir, { recursive: true });
 
 const titles = [
-  "Adaptive card", "Data grid", "Search panel", "Filter chip", "Modal window",
-  "Progress indicator", "Navigation rail", "Form field", "Toast message", "Tree view"
+  "Адаптивная карточка", "Таблица данных", "Панель поиска", "Фильтр-чип", "Модальное окно",
+  "Индикатор прогресса", "Навигационная панель", "Поле формы", "Всплывающее уведомление", "Дерево разделов"
 ];
 
 const descriptions = [
-  "Reusable interface element for dashboard scenarios",
-  "Interactive block with stateful filtering and sorting",
-  "Compact UI pattern for production applications",
-  "Component prepared for design-system integration",
-  "Element with keyboard-friendly controls and stable layout"
+  "Переиспользуемый элемент для интерфейсных панелей",
+  "Интерактивный блок с фильтрацией и сортировкой",
+  "Компактный UI-элемент для прикладных интерфейсов",
+  "Компонент для интеграции в дизайн-систему",
+  "Элемент с управлением с клавиатуры и стабильной раскладкой"
 ];
 
 function makeItem(index) {

@@ -2,7 +2,7 @@
   "technology": "React",
   "technologyId": "react",
   "status": "manual_observation",
-  "runDate": "2026-05-25T20:33:19.318Z",
+  "runDate": "2026-05-25T21:02:39.226Z",
   "packageFile": "apps/react/package.json",
   "buildCommand": "npm run build -w apps/react",
   "notes": "Tooling score is derived from package scripts, framework conventions, and source structure."

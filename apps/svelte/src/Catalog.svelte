@@ -1,7 +1,7 @@
 <script>
   import dataset from "../../../data/dataset-500.json";
 
-  const categories = ["Components", "Data", "Forms", "Navigation", "Feedback"];
+  const categories = ["Компоненты", "Данные", "Формы", "Навигация", "Обратная связь"];
   let query = "";
   let category = "all";
   let sort = "rating";
@@ -50,8 +50,8 @@
         <p>{item.description}</p>
         <div class="meta">
           <span class="pill">{item.category}</span>
-          <span>Rating: {item.rating}</span>
-          <span>Complexity: {item.complexity}</span>
+          <span>Рейтинг: {item.rating}</span>
+          <span>Сложность: {item.complexity}</span>
         </div>
       </article>
     {/each}

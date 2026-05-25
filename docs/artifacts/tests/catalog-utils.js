@@ -6,7 +6,7 @@ export const technologies = [
   { id: "lit", name: "Lit", port: 4215, dist: "apps/lit/dist" }
 ];
 
-export const categories = ["Components", "Data", "Forms", "Navigation", "Feedback"];
+export const categories = ["Компоненты", "Данные", "Формы", "Навигация", "Обратная связь"];
 
 export function filterCatalog(items, state) {
   const query = state.query.trim().toLowerCase();

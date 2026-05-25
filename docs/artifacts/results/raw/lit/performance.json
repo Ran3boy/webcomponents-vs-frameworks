@@ -2,40 +2,40 @@
   "technology": "Lit",
   "technologyId": "lit",
   "status": "measured",
-  "runDate": "2026-05-25T20:33:14.383Z",
+  "runDate": "2026-05-25T21:02:34.344Z",
   "datasetSize": 500,
   "browser": "chromium",
   "os": "Windows_NT 10.0.26220",
-  "bundleSizeKb": 114.07,
-  "initialRenderMs": 542,
-  "searchUpdateMs": 63.54,
-  "filterUpdateMs": 58.4,
-  "sortUpdateMs": 55.08,
-  "fcpMs": 48,
-  "lcpMs": 48,
+  "bundleSizeKb": 147.63,
+  "initialRenderMs": 533,
+  "searchUpdateMs": 59.66,
+  "filterUpdateMs": 55.68,
+  "sortUpdateMs": 54.4,
+  "fcpMs": 52,
+  "lcpMs": 52,
   "tbtMs": 0,
   "cls": 0,
   "samples": {
     "searchTimes": [
-      76.5,
-      63.8,
-      64.9,
-      52.4,
-      60.1
+      75.9,
+      51.5,
+      58.3,
+      63.9,
+      48.7
     ],
     "filterTimes": [
-      61.6,
-      60.3,
-      61.3,
-      47.6,
-      61.2
+      61.9,
+      47.7,
+      60.2,
+      62.1,
+      46.5
     ],
     "sortTimes": [
-      60.9,
-      61.3,
+      60.6,
+      59.2,
       46.7,
-      46.2,
-      60.3
+      59.8,
+      45.7
     ]
   }
 }

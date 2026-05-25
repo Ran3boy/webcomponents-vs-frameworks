@@ -2,40 +2,40 @@
   "technology": "Vue.js",
   "technologyId": "vue",
   "status": "measured",
-  "runDate": "2026-05-25T20:33:10.651Z",
+  "runDate": "2026-05-25T21:02:30.628Z",
   "datasetSize": 500,
   "browser": "chromium",
   "os": "Windows_NT 10.0.26220",
-  "bundleSizeKb": 158.97,
-  "initialRenderMs": 529,
-  "searchUpdateMs": 60.2,
-  "filterUpdateMs": 55.06,
-  "sortUpdateMs": 55.14,
-  "fcpMs": 56,
-  "lcpMs": 56,
+  "bundleSizeKb": 192.53,
+  "initialRenderMs": 540,
+  "searchUpdateMs": 60.68,
+  "filterUpdateMs": 55.46,
+  "sortUpdateMs": 52.42,
+  "fcpMs": 52,
+  "lcpMs": 52,
   "tbtMs": 0,
   "cls": 0,
   "samples": {
     "searchTimes": [
-      75.4,
-      65.3,
-      53.5,
-      58,
-      48.8
+      75.8,
+      60.3,
+      51.1,
+      56.3,
+      59.9
     ],
     "filterTimes": [
-      60.6,
-      61,
-      60.7,
-      47,
-      46
+      59.8,
+      46.2,
+      61.9,
+      62.5,
+      46.9
     ],
     "sortTimes": [
-      61.5,
-      60.7,
-      46.2,
-      61.4,
-      45.9
+      61.3,
+      61.7,
+      47.2,
+      46.1,
+      45.8
     ]
   }
 }
