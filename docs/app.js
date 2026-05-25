@@ -6,6 +6,49 @@ import { demoDataset } from "./data/demoDataset.js";
 
 const demoItems = demoDataset.slice(0, 20);
 
+const scenarios = {
+  widgets: {
+    label: "Рекомендуемый подход",
+    title: "Web Components или Lit",
+    text: "Для встраиваемых компонентов и виджетов приоритетны переносимость, независимость от экосистемы, инкапсуляция DOM и изоляция стилей.",
+    points: [
+      "использование в разных приложениях и технических стеках;",
+      "минимизация конфликтов с кодом хост-приложения;",
+      "стабильный публичный контракт компонента."
+    ]
+  },
+  spa: {
+    label: "Рекомендуемый подход",
+    title: "Angular, React или Vue.js",
+    text: "Для корпоративных SPA важны маршрутизация, управление состоянием, tooling, командные соглашения и развитая экосистема прикладной разработки.",
+    points: [
+      "единая архитектура приложения;",
+      "готовые решения для состояния и маршрутов;",
+      "быстрая командная разработка."
+    ]
+  },
+  design: {
+    label: "Рекомендуемый подход",
+    title: "Web Components или Lit",
+    text: "Для дизайн-системы, которая должна жить дольше отдельных приложений, полезны стандартизованный DOM-контракт и переносимость между фреймворками.",
+    points: [
+      "переиспользование в нескольких продуктах;",
+      "изоляция стилей и стабильность API;",
+      "меньшая зависимость от смены фронтенд-стека."
+    ]
+  },
+  interactive: {
+    label: "Рекомендуемый подход",
+    title: "React, Vue.js или Svelte",
+    text: "Для высокоинтерактивных интерфейсов важны реактивная модель, удобное управление состоянием, tooling и производительность обновлений.",
+    points: [
+      "частые обновления UI;",
+      "сложная клиентская логика;",
+      "развитая отладка и компонентная модель."
+    ]
+  }
+};
+
 function renderTable(target, rows) {
   if (!rows.length) {
     target.innerHTML = "<tbody><tr><td>Ожидает запуска тестов</td></tr></tbody>";
@@ -69,13 +112,52 @@ function renderDemo() {
 
 function renderEvidenceLinks() {
   const links = [
-    "artifacts/apps/web-components/", "artifacts/apps/react/", "artifacts/apps/vue/", "artifacts/apps/svelte/", "artifacts/apps/lit/",
-    "artifacts/data/", "artifacts/tests/", "artifacts/results/environment.json", "artifacts/results/raw/",
+    "artifacts/apps/web-components/src/catalog-component.js",
+    "artifacts/apps/react/src/Catalog.jsx",
+    "artifacts/apps/vue/src/Catalog.vue",
+    "artifacts/apps/svelte/src/Catalog.svelte",
+    "artifacts/apps/lit/src/catalog-element.js",
+    "artifacts/data/dataset-500.json",
+    "artifacts/tests/run-performance-tests.js",
+    "artifacts/tests/run-style-isolation-tests.js",
+    "artifacts/tests/run-integration-tests.js",
+    "artifacts/results/environment.json",
+    "artifacts/results/raw/web-components/performance.json",
+    "artifacts/results/raw/react/performance.json",
+    "artifacts/results/raw/vue/performance.json",
+    "artifacts/results/raw/svelte/performance.json",
+    "artifacts/results/raw/lit/performance.json",
     "artifacts/results/processed/technical-metrics.csv", "artifacts/results/processed/technical-metrics.json",
     "artifacts/results/processed/scoring-matrix.csv", "artifacts/results/processed/scoring-matrix.json",
-    "artifacts/results/processed/scoring-justification.md", "artifacts/results/charts/"
+    "artifacts/results/processed/scoring-justification.md",
+    "artifacts/results/charts/scoring-heatmap.svg"
   ];
   document.getElementById("evidence-links").innerHTML = links.map((href) => `<a href="./${href}">${href}</a>`).join("");
+}
+
+function renderScenario(key) {
+  const target = document.getElementById("scenario-result");
+  if (!target) return;
+  const scenario = scenarios[key] || scenarios.widgets;
+  target.innerHTML = `
+    <span class="tag">${scenario.label}</span>
+    <h3>${scenario.title}</h3>
+    <p>${scenario.text}</p>
+    <ul>${scenario.points.map((point) => `<li>${point}</li>`).join("")}</ul>
+  `;
+}
+
+function bindScenarioTabs() {
+  const tabs = [...document.querySelectorAll(".scenario-tab")];
+  if (!tabs.length) return;
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      tabs.forEach((item) => item.classList.remove("active"));
+      tab.classList.add("active");
+      renderScenario(tab.dataset.scenario);
+    });
+  });
+  renderScenario("widgets");
 }
 
 renderDemo();
@@ -85,3 +167,4 @@ renderTable(document.getElementById("metrics-table"), technicalMetrics);
 renderTable(document.getElementById("scoring-table"), scoringMatrix);
 document.getElementById("justification").textContent = scoringJustification;
 renderEvidenceLinks();
+bindScenarioTabs();

@@ -3,35 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Эксперимент: Web Components и фронтенд-фреймворки</title>
+    <title>Выбор технологии UI: эксперимент и рекомендации</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div>
-        <p class="eyebrow">ВКР / экспериментальный стенд</p>
-        <h1>Сравнительный анализ Web Components и современных фронтенд-фреймворков</h1>
-        <p class="lead">Сайт показывает не только итоговую матрицу, а цепочку доказательств: код реализаций, единые сценарии, raw JSON, processed CSV/JSON, диаграммы и обоснование баллов K1-K10.</p>
+    <nav class="top-nav" aria-label="Навигация по сайту">
+      <a href="#experiment">Эксперимент</a>
+      <a href="#metrics">Метрики</a>
+      <a href="#scoring">Матрица K1-K10</a>
+      <a href="#recommendations">Рекомендации</a>
+      <a href="#choice-matrix">Матрица выбора</a>
+      <a href="#checklist">Чек-лист</a>
+      <a href="#evidence">Доказательства</a>
+    </nav>
+
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Практический результат сравнительного анализа</p>
+        <h1>Как выбрать технологию для разработки пользовательских интерфейсов</h1>
+        <p class="lead">Экспериментальный стенд и практические рекомендации по выбору между Web Components, фронтенд-фреймворками и гибридным подходом.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#experiment">Открыть эксперимент</a>
+          <a class="button" href="#scoring">Открыть матрицу</a>
+          <a class="button" href="#recommendations">Перейти к рекомендациям</a>
+        </div>
       </div>
+      <aside class="hero-note">
+        <strong>Связь разделов</strong>
+        <span>Экспериментальный стенд подтверждает критерии K1-K10 и шкалу 0-3, а раздел рекомендаций использует результаты анализа для практического выбора технологии.</span>
+      </aside>
     </header>
 
     <main>
-      <section class="band">
-        <div class="section-head">
-          <h2>Цель и методика</h2>
-          <p>Проверить, как шкала 0-3 из раздела 3.1 применяется на практике к одному UI-компоненту «Каталог элементов».</p>
+      <section class="section section-soft" id="experiment">
+        <div class="section-head wide">
+          <p class="eyebrow">Блок 1. Экспериментальный стенд</p>
+          <h2>Методика из раздела 3.1 проверяется на реальном компоненте</h2>
+          <p>Стенд показывает цепочку доказательств: пять реализаций компонента, единый датасет, одинаковые сценарии, raw JSON, processed CSV/JSON, диаграммы и обоснование баллов.</p>
         </div>
-        <div class="facts">
-          <article><strong>Компонент</strong><span>Каталог карточек с поиском, фильтрацией, сортировкой и сбросом.</span></article>
-          <article><strong>Технологии</strong><span>Web Components, React, Vue.js, Svelte, Lit.</span></article>
-          <article><strong>Сценарии</strong><span>Рендеринг, обновление состояния, CSS-конфликты, переносимость, tooling.</span></article>
+        <div class="info-grid three">
+          <article>
+            <span class="tag">Компонент</span>
+            <h3>Каталог элементов</h3>
+            <p>Карточки, поиск, фильтрация по категории, сортировка и сброс состояния.</p>
+          </article>
+          <article>
+            <span class="tag">Реализации</span>
+            <h3>Пять технологических вариантов</h3>
+            <p>Web Components, React, Vue.js, Svelte и Lit используют один `data/dataset-500.json`.</p>
+          </article>
+          <article>
+            <span class="tag">Сценарии</span>
+            <h3>Единые проверки</h3>
+            <p>Первичный рендеринг, update time, CSS-конфликты, переносимость и tooling evidence.</p>
+          </article>
         </div>
       </section>
 
-      <section class="band">
+      <section class="section" id="demo">
         <div class="section-head">
-          <h2>Демо сценария</h2>
-          <p>Этот блок демонстрирует поведение компонента. Сравниваемые реализации находятся в `apps/`.</p>
+          <p class="eyebrow">Демонстрация компонента</p>
+          <h2>Каталог с поиском, фильтром и сортировкой</h2>
+          <p>Демо использует 20 элементов из общего датасета. Сравниваемые реализации с тем же поведением находятся в `apps/`.</p>
         </div>
         <div class="demo-toolbar">
           <input id="demo-search" placeholder="Поиск по демо-каталогу" />
@@ -48,36 +81,39 @@
         <div id="demo-grid" class="demo-grid"></div>
       </section>
 
-      <section class="band">
+      <section class="section section-soft" id="status">
         <div class="section-head">
-          <h2>Статус данных</h2>
+          <p class="eyebrow">Статус данных</p>
+          <h2>Среда запуска и актуальность результатов</h2>
           <p id="data-status">Проверяется статус processed данных.</p>
         </div>
         <div id="environment" class="kv"></div>
       </section>
 
-      <section class="band">
-        <div class="section-head">
-          <h2>Технические метрики</h2>
-          <p>Таблица строится из `results/processed/technical-metrics.json`. Числовые значения появляются после запуска `npm run experiment`.</p>
+      <section class="section table-section" id="metrics">
+        <div class="section-head wide">
+          <p class="eyebrow">Технические метрики</p>
+          <h2>Измерения после запуска `npm run experiment`</h2>
+          <p>Таблица строится из `results/processed/technical-metrics.json`. Поле `evidence_status` показывает, какие данные измерены автоматически, а какие основаны на наблюдаемом признаке.</p>
         </div>
         <div class="metric-notes">
           <article><strong>bundle size</strong><span>Сумма размеров HTML, CSS и JS файлов в `dist/` после Vite build.</span></article>
           <article><strong>initial render time</strong><span>Время от `page.goto()` до появления первой карточки каталога в Playwright.</span></article>
-          <article><strong>update time</strong><span>Среднее время реакции после поиска, фильтрации и сортировки, измеренное одинаковыми Playwright-действиями.</span></article>
-          <article><strong>FCP и LCP</strong><span>Значения из браузерного Performance API для first contentful paint и largest contentful paint.</span></article>
-          <article><strong>TBT</strong><span>Сумма превышений long task над 50 ms, полученная через PerformanceObserver.</span></article>
-          <article><strong>CLS</strong><span>Накопленное layout shift значение без recent input, полученное через PerformanceObserver.</span></article>
+          <article><strong>update time</strong><span>Среднее время реакции после поиска, фильтрации и сортировки.</span></article>
+          <article><strong>FCP и LCP</strong><span>Значения из браузерного Performance API.</span></article>
+          <article><strong>TBT</strong><span>Сумма превышений long task над 50 ms через PerformanceObserver.</span></article>
+          <article><strong>CLS</strong><span>Накопленное layout shift значение без recent input.</span></article>
         </div>
         <div class="table-wrap">
           <table id="metrics-table"></table>
         </div>
       </section>
 
-      <section class="band">
-        <div class="section-head">
-          <h2>Диаграммы</h2>
-          <p>SVG-файлы генерируются скриптом `npm run generate-charts` по processed данным.</p>
+      <section class="section" id="charts">
+        <div class="section-head wide">
+          <p class="eyebrow">Диаграммы</p>
+          <h2>Визуализация processed данных</h2>
+          <p>SVG-файлы генерируются скриптом `npm run generate-charts`, а не рисуются вручную.</p>
         </div>
         <div class="chart-grid">
           <img src="./charts/bundle-size.svg" alt="Bundle size chart" />
@@ -87,52 +123,168 @@
         </div>
       </section>
 
-      <section class="band">
-        <div class="section-head">
-          <h2>Матрица K1-K10</h2>
-          <p>Оценки не суммируются в общий рейтинг: они показывают профиль технологии.</p>
+      <section class="section table-section section-soft" id="scoring">
+        <div class="section-head wide">
+          <p class="eyebrow">Матрица K1-K10</p>
+          <h2>Практическое применение шкалы 0-3</h2>
+          <p>Оценки не суммируются в общий рейтинг: матрица показывает профиль технологии по критериям ВКР.</p>
         </div>
         <div class="table-wrap">
           <table id="scoring-table"></table>
         </div>
       </section>
 
-      <section class="band">
-        <div class="section-head">
-          <h2>Обоснование баллов</h2>
+      <section class="section" id="justification-section">
+        <div class="section-head wide">
+          <p class="eyebrow">Обоснование баллов</p>
+          <h2>Каждая оценка связана с артефактом</h2>
           <p>Текст загружается из `results/processed/scoring-justification.md` через синхронизированный модуль данных.</p>
         </div>
         <pre id="justification"></pre>
       </section>
 
-      <section class="band">
-        <div class="section-head">
-          <h2>Доказательная база</h2>
-          <p>Ссылки ведут к артефактам репозитория.</p>
+      <section class="section recommendation-intro" id="recommendations">
+        <div class="split-panel">
+          <div>
+            <p class="eyebrow">Блок 2. Практические рекомендации</p>
+            <h2>Выбор зависит не от «лучшей» технологии, а от профиля проекта</h2>
+          </div>
+          <p>Web Components сильнее проявляют себя там, где важны переносимость, независимость от фреймворка и долгий жизненный цикл компонентов. Фронтенд-фреймворки рациональнее использовать там, где требуется развитая инфраструктура приложения, управление состоянием, маршрутизация и высокая скорость командной разработки.</p>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="quick-choice">
+        <div class="section-head wide">
+          <p class="eyebrow">Быстрый выбор</p>
+          <h2>Выберите основной сценарий проекта</h2>
+        </div>
+        <div class="scenario-tabs" role="tablist" aria-label="Сценарии проекта">
+          <button class="scenario-tab active" type="button" data-scenario="widgets">Виджеты</button>
+          <button class="scenario-tab" type="button" data-scenario="spa">Корпоративное SPA</button>
+          <button class="scenario-tab" type="button" data-scenario="design">Дизайн-система</button>
+          <button class="scenario-tab" type="button" data-scenario="interactive">Высокоинтерактивный UI</button>
+        </div>
+        <article class="recommendation-box" id="scenario-result"></article>
+      </section>
+
+      <section class="section" id="technology-cards">
+        <div class="section-head wide">
+          <p class="eyebrow">Рекомендации</p>
+          <h2>Семь технологических вариантов</h2>
+        </div>
+        <div class="tech-grid">
+          <article>
+            <span class="tag">Web Components</span>
+            <h3>Для переносимых компонентов и мультифреймворковых сред</h3>
+            <p>Выбирайте Web Components, если компоненты должны работать в разных технологических стеках, быть независимыми от конкретного фреймворка и сохранять стабильность при долгом жизненном цикле проекта.</p>
+            <ul><li>дизайн-системы;</li><li>встраиваемые виджеты;</li><li>микрофронтенд-среды.</li></ul>
+          </article>
+          <article>
+            <span class="tag">React</span>
+            <h3>Для гибких интерактивных SPA</h3>
+            <p>React рационален для приложений, где важны гибкость архитектуры, развитая экосистема и возможность самостоятельно подобрать маршрутизацию, управление состоянием и UI-библиотеки.</p>
+            <ul><li>сложные интерактивные интерфейсы;</li><li>SPA с гибкой архитектурой;</li><li>много внешних библиотек.</li></ul>
+          </article>
+          <article>
+            <span class="tag">Vue.js</span>
+            <h3>Для постепенного внедрения и быстрой разработки</h3>
+            <p>Vue.js подходит там, где требуется низкий порог входа, реактивная модель и возможность постепенно внедрять фреймворк в уже существующие интерфейсы.</p>
+            <ul><li>малые и средние приложения;</li><li>постепенная интеграция;</li><li>быстрое освоение командой.</li></ul>
+          </article>
+          <article>
+            <span class="tag">Angular</span>
+            <h3>Для крупных корпоративных систем</h3>
+            <p>Angular целесообразен в крупных проектах, где важны строгая архитектура, TypeScript, встроенные инструменты, Dependency Injection и единообразие командной разработки.</p>
+            <ul><li>корпоративные приложения;</li><li>формализованные процессы;</li><li>долгосрочное сопровождение.</li></ul>
+          </article>
+          <article>
+            <span class="tag">Svelte</span>
+            <h3>Для производительных интерфейсов с малым runtime</h3>
+            <p>Svelte стоит рассматривать, когда важны малый размер клиентской сборки, компиляционный подход и высокая отзывчивость интерфейса.</p>
+            <ul><li>частые обновления UI;</li><li>требование к малому bundle size;</li><li>простота итогового runtime.</li></ul>
+          </article>
+          <article>
+            <span class="tag">Lit</span>
+            <h3>Для удобной разработки Web Components</h3>
+            <p>Lit занимает промежуточную позицию: компоненты остаются стандартными Web Components, но разработчик получает реактивные свойства, шаблонизацию и удобную модель разработки.</p>
+            <ul><li>дизайн-системы на Web Components;</li><li>мультифреймворковые UI-библиотеки;</li><li>стандартный DOM-контракт.</li></ul>
+          </article>
+          <article class="hybrid-card">
+            <span class="tag">Гибридный подход</span>
+            <h3>Для объединения долговечности стандартов и продуктивности фреймворков</h3>
+            <p>Используйте Web Components как устойчивый слой независимых UI-компонентов, а фреймворки - для бизнес-логики, маршрутизации, управления состоянием и архитектуры приложения.</p>
+            <ul><li>Web Components - базовые переиспользуемые элементы;</li><li>фреймворк - приложение, маршруты, состояние;</li><li>полезно для долгосрочных и гетерогенных систем.</li></ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section table-section section-soft" id="choice-matrix">
+        <div class="section-head wide">
+          <p class="eyebrow">Матрица выбора</p>
+          <h2>Условие проекта → рекомендуемая технология</h2>
+        </div>
+        <div class="table-wrap choice-table">
+          <table>
+            <thead>
+              <tr><th>Условие проекта</th><th>Лучше подходит</th><th>Почему</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Компоненты должны использоваться в разных стеках</td><td><strong>Web Components / Lit</strong></td><td>Стандартный DOM-контракт, независимость от runtime фреймворка.</td></tr>
+              <tr><td>Нужна дизайн-система для нескольких приложений</td><td><strong>Web Components / Lit</strong></td><td>Изоляция стилей, переносимость, стабильный публичный API.</td></tr>
+              <tr><td>Разрабатывается крупное корпоративное SPA</td><td><strong>Angular / React / Vue.js</strong></td><td>Есть экосистема, tooling, маршрутизация и подходы к состоянию.</td></tr>
+              <tr><td>Важна скорость разработки и богатый выбор библиотек</td><td><strong>React / Vue.js</strong></td><td>Зрелая экосистема и большое количество готовых UI-решений.</td></tr>
+              <tr><td>Команда работает в строгих процессах и едином стеке</td><td><strong>Angular</strong></td><td>Регламентированная архитектура, TypeScript и встроенные инструменты.</td></tr>
+              <tr><td>Критичны малый runtime и отзывчивость интерфейса</td><td><strong>Svelte</strong></td><td>Компиляционный подход снижает часть runtime-накладных расходов.</td></tr>
+              <tr><td>Нужно совместить независимые компоненты и сложную логику приложения</td><td><strong>Гибридный подход</strong></td><td>Web Components отвечают за UI-слой, фреймворк - за приложение.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section" id="checklist">
+        <div class="section-head wide">
+          <p class="eyebrow">Чек-лист</p>
+          <h2>Что проверить перед выбором технологии</h2>
+        </div>
+        <div class="check-grid">
+          <label><input type="checkbox" /> <span>Компоненты должны работать вне одного фреймворка.</span></label>
+          <label><input type="checkbox" /> <span>Требуется изоляция стилей и DOM-структуры.</span></label>
+          <label><input type="checkbox" /> <span>Нужна развитая маршрутизация и глобальное состояние.</span></label>
+          <label><input type="checkbox" /> <span>Важны готовые UI-библиотеки и инструменты отладки.</span></label>
+          <label><input type="checkbox" /> <span>Проект будет развиваться несколько лет.</span></label>
+          <label><input type="checkbox" /> <span>Команда уже имеет устойчивый технологический стек.</span></label>
+          <label><input type="checkbox" /> <span>Нужны SSR/SSG или гибридный рендеринг.</span></label>
+          <label><input type="checkbox" /> <span>Есть риск технологической гетерогенности в будущем.</span></label>
+        </div>
+        <p class="check-note">Если большинство ответов связано с переносимостью, независимостью и изоляцией - смотрите в сторону Web Components или Lit. Если преобладают состояние, маршрутизация, tooling и скорость командной разработки - рациональнее выбрать фреймворк. При смешанных требованиях уместен гибридный подход.</p>
+      </section>
+
+      <section class="section section-soft" id="profiles">
+        <div class="section-head wide">
+          <p class="eyebrow">Выводы по проектным профилям</p>
+          <h2>Результат анализа без универсального победителя</h2>
+        </div>
+        <div class="info-grid three">
+          <article><span class="tag">Изолируемые виджеты</span><h3>Web Components / Lit</h3><p>Рациональны, когда важны переносимость и защита от внешних CSS-конфликтов.</p></article>
+          <article><span class="tag">Прикладные SPA</span><h3>React / Vue.js / Svelte / Angular</h3><p>Удобны при активной работе с состоянием, tooling и UI-экосистемой.</p></article>
+          <article><span class="tag">Гибридный подход</span><h3>Стандарты + фреймворк</h3><p>Фреймворки собирают приложение, а Web Components или Lit формируют переносимые элементы дизайн-системы.</p></article>
+        </div>
+      </section>
+
+      <section class="section table-section" id="evidence">
+        <div class="section-head wide">
+          <p class="eyebrow">Доказательная база</p>
+          <h2>Артефакты эксперимента</h2>
+          <p>Ссылки ведут к копиям файлов внутри `docs/artifacts/`, поэтому работают после публикации GitHub Pages из папки `/docs`.</p>
         </div>
         <div class="links" id="evidence-links"></div>
       </section>
 
-      <section class="band">
-        <div class="section-head">
-          <h2>Выводы по проектным профилям</h2>
-        </div>
-        <div class="facts">
-          <article><strong>Изолируемые виджеты</strong><span>Web Components и Lit рациональны, когда важны переносимость и защита от внешних CSS-конфликтов.</span></article>
-          <article><strong>Прикладные SPA</strong><span>React, Vue.js и Svelte удобны при активной работе с состоянием, tooling и UI-экосистемой.</span></article>
-          <article><strong>Гибридный подход</strong><span>Фреймворки могут собирать приложение, а Web Components/Lit - переносимые элементы дизайн-системы.</span></article>
-        </div>
-      </section>
-
-      <section class="band">
-        <div class="section-head">
-          <h2>Как доказать эксперимент комиссии</h2>
-          <p>Покажите цепочку артефактов в одном направлении: код реализаций → запуск тестов → raw JSON → processed CSV/JSON → диаграммы → матрица K1-K10 → выводы.</p>
-        </div>
-        <div class="facts">
-          <article><strong>1. Код</strong><span>Открыть `apps/` и показать пять реализаций одного компонента на едином датасете.</span></article>
-          <article><strong>2. Запуск</strong><span>Выполнить `npm run experiment` и показать обновление `results/`.</span></article>
-          <article><strong>3. Артефакты</strong><span>Сопоставить raw JSON, processed таблицы, диаграммы и scoring justification.</span></article>
+      <section class="section proof-section">
+        <div class="section-head wide">
+          <p class="eyebrow">Как доказать эксперимент комиссии</p>
+          <h2>Код → тесты → raw JSON → processed CSV/JSON → диаграммы → матрица K1-K10 → выводы</h2>
+          <p>Эта цепочка показывает, что сайт не является визуальной витриной: каждый вывод связан с исходным кодом, запуском проверки и сохранёнными артефактами.</p>
         </div>
       </section>
     </main>
