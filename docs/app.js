@@ -2,14 +2,9 @@ import { technicalMetrics } from "./data/metrics.js";
 import { scoringMatrix } from "./data/scoringMatrix.js";
 import { scoringJustification } from "./data/scoringJustification.js";
 import { environmentInfo } from "./data/environment.js";
+import { demoDataset } from "./data/demoDataset.js";
 
-const demoItems = [
-  { title: "Adaptive card 0001", category: "Components", description: "Reusable interface element", rating: 4.7, complexity: 2 },
-  { title: "Data grid 0002", category: "Data", description: "Interactive block with sorting", rating: 4.5, complexity: 5 },
-  { title: "Search panel 0003", category: "Forms", description: "Stateful filtering scenario", rating: 4.1, complexity: 3 },
-  { title: "Navigation rail 0004", category: "Navigation", description: "Application navigation pattern", rating: 4.2, complexity: 4 },
-  { title: "Toast message 0005", category: "Feedback", description: "Compact notification element", rating: 4.8, complexity: 1 }
-];
+const demoItems = demoDataset.slice(0, 20);
 
 function renderTable(target, rows) {
   if (!rows.length) {

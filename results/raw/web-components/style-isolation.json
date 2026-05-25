@@ -2,7 +2,7 @@
   "technology": "Web Components",
   "technologyId": "web-components",
   "status": "measured",
-  "runDate": "2026-05-25T20:23:31.340Z",
+  "runDate": "2026-05-25T20:33:15.894Z",
   "conflictCss": "\n  .card {\n    background: red !important;\n    font-size: 40px !important;\n  }\n\n  button {\n    border: 10px solid black !important;\n  }\n\n  div {\n    box-sizing: content-box !important;\n  }\n",
   "before": {
     "cardBackground": "rgb(255, 255, 255)",

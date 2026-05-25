@@ -90,7 +90,8 @@ main {
   gap: 12px;
 }
 
-.facts article {
+.facts article,
+.metric-notes article {
   min-height: 126px;
   padding: 18px;
   border: 1px solid #dbe3ee;
@@ -98,14 +99,23 @@ main {
   background: #fff;
 }
 
-.facts strong {
+.facts strong,
+.metric-notes strong {
   display: block;
   margin-bottom: 8px;
 }
 
-.facts span {
+.facts span,
+.metric-notes span {
   color: #526070;
   line-height: 1.5;
+}
+
+.metric-notes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+  margin-bottom: 18px;
 }
 
 .demo-toolbar {

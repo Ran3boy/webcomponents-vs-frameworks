@@ -15,6 +15,7 @@
     "collect-results": "node tests/collect-results.js",
     "generate-charts": "node tests/generate-charts.js",
     "sync-docs-data": "node tests/sync-docs-data.js",
+    "experiment": "npm run build:apps && npm run test:performance && npm run test:style && npm run test:integration && npm run collect-results && npm run generate-charts && npm run sync-docs-data",
     "test:all": "npm run build:apps && npm run test:performance && npm run test:style && npm run test:integration && npm run collect-results && npm run generate-charts && npm run sync-docs-data",
     "serve:docs": "vite --host 127.0.0.1 docs",
     "preview:web-components": "npm run dev -w apps/web-components",

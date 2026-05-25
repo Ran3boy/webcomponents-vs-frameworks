@@ -1,32 +1,43 @@
 # UI Technology Comparison Experiment
 
-Репозиторий содержит экспериментальный стенд для ВКР «Сравнительный анализ технологии Web Components и современных фронтенд-фреймворков для разработки пользовательских интерфейсов».
+Репозиторий содержит воспроизводимый экспериментальный стенд для ВКР «Сравнительный анализ технологии Web Components и современных фронтенд-фреймворков для разработки пользовательских интерфейсов».
 
-Цель стенда - показать практическое применение критериев K1-K10 и шкалы 0-3 на одном компоненте «Каталог элементов», реализованном на Web Components, React, Vue.js, Svelte и Lit.
+Это не статическая витрина: в репозитории есть исходный код пяти реализаций одного компонента, единый датасет, скрипты проверки, raw JSON, processed CSV/JSON, диаграммы, матрица K1-K10 и GitHub Pages сайт.
 
-## Быстрый запуск
+## Как воспроизвести эксперимент
+
+Установить зависимости:
 
 ```bash
 npm install
-npm run test:all
 ```
 
-Команда `npm run test:all` выполняет полный цикл:
-
-1. генерирует единые датасеты;
-2. собирает все пять реализаций;
-3. запускает измерения производительности;
-4. проверяет конфликтующие CSS-стили;
-5. формирует проверку переносимости;
-6. собирает processed CSV/JSON;
-7. генерирует SVG-диаграммы;
-8. синхронизирует данные для GitHub Pages сайта.
-
-## Повторный запуск отдельных этапов
+Собрать все реализации компонента:
 
 ```bash
-npm run setup:data
 npm run build:apps
+```
+
+Запустить полный эксперимент одной командой:
+
+```bash
+npm run experiment
+```
+
+Команда `npm run experiment` выполняет полный цикл:
+
+1. генерирует единые датасеты;
+2. собирает Web Components, React, Vue.js, Svelte и Lit приложения через Vite;
+3. измеряет производительность через Playwright и браузерный Performance API;
+4. проверяет конфликтующие CSS-стили;
+5. формирует semi-automatic evidence по переносимости;
+6. собирает processed CSV/JSON;
+7. генерирует SVG-диаграммы;
+8. синхронизирует данные и артефакты для GitHub Pages сайта.
+
+Отдельные этапы можно запускать так:
+
+```bash
 npm run test:performance
 npm run test:style
 npm run test:integration
@@ -35,20 +46,69 @@ npm run generate-charts
 npm run sync-docs-data
 ```
 
-## Структура
+Raw-результаты находятся в:
 
-- `apps/` - пять реализаций компонента.
-- `data/` - единые датасеты на 100, 500 и 1000 элементов.
-- `tests/` - скрипты измерений и обработки результатов.
-- `results/raw/` - необработанные JSON-результаты.
-- `results/processed/` - итоговые CSV/JSON и обоснование оценок.
-- `results/charts/` - SVG-диаграммы, построенные по processed данным.
-- `docs/` - GitHub Pages сайт для демонстрации комиссии.
-- `experiment-docs/` - методические документы эксперимента.
+```text
+results/raw/
+```
 
-## GitHub Pages
+Processed-таблицы находятся в:
 
-Сайт расположен в `docs/`.
+```text
+results/processed/technical-metrics.csv
+results/processed/technical-metrics.json
+results/processed/scoring-matrix.csv
+results/processed/scoring-matrix.json
+results/processed/scoring-justification.md
+```
+
+Сведения о среде запуска:
+
+```text
+results/environment.json
+```
+
+Диаграммы:
+
+```text
+results/charts/
+```
+
+## Реализации компонента
+
+Один и тот же UI-компонент «Каталог элементов» реализован в пяти вариантах:
+
+- `apps/web-components/`
+- `apps/react/`
+- `apps/vue/`
+- `apps/svelte/`
+- `apps/lit/`
+
+Все реализации используют единый датасет из `data/dataset-500.json` и поддерживают одинаковые сценарии: первичный рендеринг, поиск, фильтрацию, сортировку и сброс.
+
+## Команды
+
+Основные команды корневого `package.json`:
+
+```bash
+npm run build:apps
+npm run test:performance
+npm run test:style
+npm run test:integration
+npm run collect-results
+npm run generate-charts
+npm run experiment
+```
+
+Локальный запуск GitHub Pages сайта:
+
+```bash
+npm run serve:docs
+```
+
+## Публикация на GitHub Pages
+
+Сайт расположен в папке `docs/`.
 
 Для публикации:
 
@@ -59,14 +119,29 @@ npm run sync-docs-data
 5. выбрать папку `/docs`;
 6. нажать `Save`.
 
-Локальная проверка сайта:
+Папка `docs/artifacts/` содержит копии ключевых артефактов, чтобы ссылки на сайте работали после публикации GitHub Pages из `/docs`.
 
-```bash
-npm run serve:docs
+## Как доказать эксперимент комиссии
+
+Показывать нужно цепочку:
+
+```text
+код реализаций -> запуск тестов -> raw JSON -> processed CSV/JSON -> диаграммы -> матрица K1-K10 -> выводы
 ```
+
+Практически это выглядит так:
+
+1. открыть `apps/` и показать пять реализаций одного компонента;
+2. показать единые датасеты в `data/`;
+3. запустить `npm run experiment`;
+4. открыть `results/raw/` и показать необработанные JSON;
+5. открыть `results/processed/` и показать CSV/JSON таблицы;
+6. открыть `results/charts/` и показать диаграммы;
+7. открыть `results/processed/scoring-justification.md`;
+8. открыть GitHub Pages сайт из `docs/`.
 
 ## Политика результатов
 
 Финальные числовые значения технических метрик не внесены вручную. Они появляются после запуска скриптов измерения и сохраняются в `results/raw/`, затем преобразуются в `results/processed/technical-metrics.csv` и `results/processed/technical-metrics.json`.
 
-Оценочная матрица K1-K10 формируется из измерений, наблюдаемых признаков и правил в `tests/collect-results.js`; текстовые основания сохраняются в `results/processed/scoring-justification.md`.
+Если значение основано не на автоматическом измерении, а на наблюдаемом признаке, соответствующий raw-файл помечается статусом `manual_observation`. Демонстрационные данные не должны использоваться как финальное доказательство эксперимента.

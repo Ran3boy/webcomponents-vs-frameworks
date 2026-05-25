@@ -2,7 +2,7 @@
   "technology": "React",
   "technologyId": "react",
   "status": "manual_observation",
-  "runDate": "2026-05-25T20:23:34.671Z",
+  "runDate": "2026-05-25T20:33:19.317Z",
   "sourceFilesInspected": [
     "apps/react/index.html",
     "apps/react/src/Catalog.jsx"

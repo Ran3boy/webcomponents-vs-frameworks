@@ -13,6 +13,7 @@ function writeModule(file, exportName, data) {
 
 writeModule("metrics.js", "technicalMetrics", readJson(path.join(root, "results", "processed", "technical-metrics.json"), []));
 writeModule("scoringMatrix.js", "scoringMatrix", readJson(path.join(root, "results", "processed", "scoring-matrix.json"), []));
+writeModule("demoDataset.js", "demoDataset", readJson(path.join(root, "data", "dataset-500.json"), []).slice(0, 20));
 const justificationPath = path.join(root, "results", "processed", "scoring-justification.md");
 writeModule("scoringJustification.js", "scoringJustification", fs.existsSync(justificationPath) ? fs.readFileSync(justificationPath, "utf8") : "Ожидает запуска тестов.");
 writeModule("environment.js", "environmentInfo", readJson(path.join(root, "results", "environment.json"), {}));

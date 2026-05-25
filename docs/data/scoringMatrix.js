@@ -11,7 +11,7 @@ export const scoringMatrix = [
     "K8": 2,
     "K9": 3,
     "K10": 1,
-    "status": "measured_and_justified"
+    "status": "measured_and_manual_observation_justified"
   },
   {
     "technology": "React",
@@ -25,7 +25,7 @@ export const scoringMatrix = [
     "K8": 3,
     "K9": 1,
     "K10": 3,
-    "status": "measured_and_justified"
+    "status": "measured_and_manual_observation_justified"
   },
   {
     "technology": "Vue.js",
@@ -39,7 +39,7 @@ export const scoringMatrix = [
     "K8": 2,
     "K9": 2,
     "K10": 3,
-    "status": "measured_and_justified"
+    "status": "measured_and_manual_observation_justified"
   },
   {
     "technology": "Svelte",
@@ -53,7 +53,7 @@ export const scoringMatrix = [
     "K8": 2,
     "K9": 2,
     "K10": 2,
-    "status": "measured_and_justified"
+    "status": "measured_and_manual_observation_justified"
   },
   {
     "technology": "Lit",
@@ -67,6 +67,6 @@ export const scoringMatrix = [
     "K8": 2,
     "K9": 3,
     "K10": 2,
-    "status": "measured_and_justified"
+    "status": "measured_and_manual_observation_justified"
   }
 ];

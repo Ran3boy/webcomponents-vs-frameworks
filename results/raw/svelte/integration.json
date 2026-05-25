@@ -2,7 +2,7 @@
   "technology": "Svelte",
   "technologyId": "svelte",
   "status": "manual_observation",
-  "runDate": "2026-05-25T20:23:34.672Z",
+  "runDate": "2026-05-25T20:33:19.318Z",
   "sourceFilesInspected": [
     "apps/svelte/index.html",
     "apps/svelte/src/Catalog.svelte"

@@ -59,7 +59,15 @@
       <section class="band">
         <div class="section-head">
           <h2>Технические метрики</h2>
-          <p>Таблица строится из `results/processed/technical-metrics.json`.</p>
+          <p>Таблица строится из `results/processed/technical-metrics.json`. Числовые значения появляются после запуска `npm run experiment`.</p>
+        </div>
+        <div class="metric-notes">
+          <article><strong>bundle size</strong><span>Сумма размеров HTML, CSS и JS файлов в `dist/` после Vite build.</span></article>
+          <article><strong>initial render time</strong><span>Время от `page.goto()` до появления первой карточки каталога в Playwright.</span></article>
+          <article><strong>update time</strong><span>Среднее время реакции после поиска, фильтрации и сортировки, измеренное одинаковыми Playwright-действиями.</span></article>
+          <article><strong>FCP и LCP</strong><span>Значения из браузерного Performance API для first contentful paint и largest contentful paint.</span></article>
+          <article><strong>TBT</strong><span>Сумма превышений long task над 50 ms, полученная через PerformanceObserver.</span></article>
+          <article><strong>CLS</strong><span>Накопленное layout shift значение без recent input, полученное через PerformanceObserver.</span></article>
         </div>
         <div class="table-wrap">
           <table id="metrics-table"></table>
@@ -113,6 +121,18 @@
           <article><strong>Изолируемые виджеты</strong><span>Web Components и Lit рациональны, когда важны переносимость и защита от внешних CSS-конфликтов.</span></article>
           <article><strong>Прикладные SPA</strong><span>React, Vue.js и Svelte удобны при активной работе с состоянием, tooling и UI-экосистемой.</span></article>
           <article><strong>Гибридный подход</strong><span>Фреймворки могут собирать приложение, а Web Components/Lit - переносимые элементы дизайн-системы.</span></article>
+        </div>
+      </section>
+
+      <section class="band">
+        <div class="section-head">
+          <h2>Как доказать эксперимент комиссии</h2>
+          <p>Покажите цепочку артефактов в одном направлении: код реализаций → запуск тестов → raw JSON → processed CSV/JSON → диаграммы → матрица K1-K10 → выводы.</p>
+        </div>
+        <div class="facts">
+          <article><strong>1. Код</strong><span>Открыть `apps/` и показать пять реализаций одного компонента на едином датасете.</span></article>
+          <article><strong>2. Запуск</strong><span>Выполнить `npm run experiment` и показать обновление `results/`.</span></article>
+          <article><strong>3. Артефакты</strong><span>Сопоставить raw JSON, processed таблицы, диаграммы и scoring justification.</span></article>
         </div>
       </section>
     </main>

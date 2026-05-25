@@ -2,8 +2,8 @@
   "technology": "Vue.js",
   "status": "measured_via_playwright_navigation_timing",
   "note": "The experiment records browser Performance API values instead of running Lighthouse CLI.",
-  "fcpMs": 48,
-  "lcpMs": 48,
+  "fcpMs": 56,
+  "lcpMs": 56,
   "tbtMs": 0,
   "cls": 0
 }

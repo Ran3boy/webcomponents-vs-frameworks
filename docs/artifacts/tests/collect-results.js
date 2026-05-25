@@ -57,6 +57,7 @@ const technicalRows = technologies.map((tech) => {
       cls: "",
       style_isolation: style?.styleIsolation || "awaiting_test_run",
       integration_result: integration?.result || "awaiting_test_run",
+      evidence_status: "awaiting_test_run",
       status: "awaiting_test_run"
     };
   }
@@ -74,6 +75,7 @@ const technicalRows = technologies.map((tech) => {
     cls: performance.cls,
     style_isolation: style.styleIsolation,
     integration_result: integration.result,
+    evidence_status: "performance=measured; style_isolation=measured; integration_result=manual_observation",
     status: "measured"
   };
 });
@@ -100,12 +102,12 @@ const scoringRows = technicalRows.map((row) => ({
   K8: qualitative[row.technology].K8,
   K9: perfScoreMap.get(row.technology) || "",
   K10: qualitative[row.technology].K10,
-  status: row.status === "measured" ? "measured_and_justified" : "awaiting_test_run"
+  status: row.status === "measured" ? "measured_and_manual_observation_justified" : "awaiting_test_run"
 }));
 
 writeCsv(path.join(processedDir, "technical-metrics.csv"), technicalRows, [
   "technology", "bundle_size_kb", "initial_render_ms", "search_update_ms", "filter_update_ms", "sort_update_ms",
-  "fcp_ms", "lcp_ms", "tbt_ms", "cls", "style_isolation", "integration_result", "status"
+  "fcp_ms", "lcp_ms", "tbt_ms", "cls", "style_isolation", "integration_result", "evidence_status", "status"
 ]);
 writeJson(path.join(processedDir, "technical-metrics.json"), technicalRows);
 

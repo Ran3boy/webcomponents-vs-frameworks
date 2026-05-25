@@ -2,8 +2,8 @@
   "technology": "Lit",
   "status": "measured_via_playwright_navigation_timing",
   "note": "The experiment records browser Performance API values instead of running Lighthouse CLI.",
-  "fcpMs": 44,
-  "lcpMs": 44,
+  "fcpMs": 48,
+  "lcpMs": 48,
   "tbtMs": 0,
   "cls": 0
 }

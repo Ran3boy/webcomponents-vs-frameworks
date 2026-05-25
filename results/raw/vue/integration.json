@@ -2,7 +2,7 @@
   "technology": "Vue.js",
   "technologyId": "vue",
   "status": "manual_observation",
-  "runDate": "2026-05-25T20:23:34.671Z",
+  "runDate": "2026-05-25T20:33:19.318Z",
   "sourceFilesInspected": [
     "apps/vue/index.html",
     "apps/vue/src/Catalog.vue"
