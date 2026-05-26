@@ -77,14 +77,17 @@ a {
   width: 100%;
   min-height: 72vh;
   display: grid;
-  align-items: end;
+  align-items: center;
+  justify-items: center;
   padding: 76px clamp(24px, 5vw, 72px) 84px;
+  text-align: center;
 }
 
 .hero-copy {
   width: 100%;
   min-width: 0;
   max-width: 1280px;
+  margin: 0 auto;
 }
 
 .eyebrow {
@@ -112,7 +115,9 @@ h3 {
 
 h1 {
   max-width: 1180px;
+  margin-right: auto;
   margin-bottom: 28px;
+  margin-left: auto;
   font-size: clamp(58px, 8vw, 118px);
   line-height: 0.96;
 }
@@ -132,7 +137,9 @@ h3 {
 
 .lead {
   max-width: 900px;
+  margin-right: auto;
   margin-bottom: 30px;
+  margin-left: auto;
   color: var(--muted);
   font-size: 25px;
   line-height: 1.44;
@@ -143,6 +150,10 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+}
+
+.hero-actions {
+  justify-content: center;
 }
 
 .button.primary,
