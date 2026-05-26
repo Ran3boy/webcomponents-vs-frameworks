@@ -4,7 +4,7 @@ import { scoringJustification } from "./data/scoringJustification.js";
 import { environmentInfo } from "./data/environment.js";
 import { demoDataset } from "./data/demoDataset.js";
 
-const demoItems = demoDataset.slice(0, 100);
+const demoItems = demoDataset.slice(0, 500);
 
 const technicalColumnLabels = {
   technology: "Технология",
