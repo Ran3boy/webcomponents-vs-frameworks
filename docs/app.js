@@ -380,10 +380,15 @@ function renderJustification() {
   target.innerHTML = sections.map((section) => {
     const [titleLine, ...body] = section.split("\n");
     const title = titleLine.replace(/^##\s*/, "").trim();
+    const items = body
+      .map((line) => line.trim())
+      .filter((line) => line.startsWith("- "))
+      .map((line) => `<li>${localizeText(line.replace(/^-\s*/, ""))}</li>`)
+      .join("");
     return `
       <details>
         <summary>${title}</summary>
-        <pre>${localizeText(body.join("\n").trim())}</pre>
+        <ul>${items}</ul>
       </details>
     `;
   }).join("");

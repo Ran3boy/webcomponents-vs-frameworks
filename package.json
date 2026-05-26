@@ -8,6 +8,7 @@
   ],
   "scripts": {
     "setup:data": "node tests/generate-datasets.js",
+    "install:apps": "npm install --workspaces --include-workspace-root",
     "build:apps": "npm run setup:data && npm run build --workspaces --if-present",
     "test:performance": "node tests/run-performance-tests.js",
     "test:style": "node tests/run-style-isolation-tests.js",

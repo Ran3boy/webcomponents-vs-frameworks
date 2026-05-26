@@ -140,6 +140,53 @@
         </div>
       </section>
 
+      <section class="section" id="matrix-guide">
+        <div class="section-inner section-card">
+          <div class="section-head">
+            <p class="eyebrow">Как читать матрицу</p>
+            <h2>Шкала показывает профиль технологии, а не универсального победителя</h2>
+            <p>Каждый критерий K1-K10 оценивается по шкале 0-3: 0 - свойство отсутствует, 1 - выражено слабо, 2 - поддерживается частично, 3 - поддерживается полноценно. Баллы не суммируются: матрица нужна для сопоставления сильных и слабых сторон технологии под профиль проекта. Для K6 шкала инвертирована: чем меньше зависимость от runtime и экосистемы, тем выше балл.</p>
+          </div>
+          <div class="criteria-grid">
+            <article><strong>K1</strong><span>Структура компонента и повторное использование.</span></article>
+            <article><strong>K2</strong><span>Границы DOM и механизмы инкапсуляции.</span></article>
+            <article><strong>K3</strong><span>Изоляция стилей и результат style isolation test.</span></article>
+            <article><strong>K4</strong><span>Реализация поиска, фильтрации, сортировки и обновлений.</span></article>
+            <article><strong>K5</strong><span>Интеграция и переносимость между окружениями.</span></article>
+            <article><strong>K6</strong><span>Зависимость от runtime, tooling и экосистемы.</span></article>
+            <article><strong>K7</strong><span>Средства разработки, сборка, тестирование и DX.</span></article>
+            <article><strong>K8</strong><span>Архитектурные соглашения и масштабируемость процесса.</span></article>
+            <article><strong>K9</strong><span>Размер сборки, рендеринг, обновления и Web Vitals.</span></article>
+            <article><strong>K10</strong><span>UI-экосистема, accessibility, i18n и зрелость решений.</span></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="limitations">
+        <div class="section-inner section-card">
+          <div class="section-head">
+            <p class="eyebrow">Ограничения эксперимента</p>
+            <h2>Метрики сравниваются в одинаковых условиях запуска</h2>
+            <p>Числовые значения зависят от операционной системы, версии Node.js, браузера, мощности компьютера и текущей нагрузки. Поэтому результаты используются как сравнительные значения внутри одного запуска стенда, а не как абсолютные универсальные показатели для всех проектов и окружений.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="reproduce">
+        <div class="section-inner section-card">
+          <div class="section-head">
+            <p class="eyebrow">Как воспроизвести эксперимент</p>
+            <h2>Запуск стенда выполняется одной цепочкой команд</h2>
+            <p>После запуска обновляются `results/raw`, `results/processed`, `results/charts`, а также данные сайта в `docs` для публикации через GitHub Pages.</p>
+          </div>
+          <div class="command-grid">
+            <code>npm install</code>
+            <code>npm run install:apps</code>
+            <code>npm run experiment</code>
+          </div>
+        </div>
+      </section>
+
       <section class="section" id="scoring">
         <div class="section-wide section-card">
           <div class="section-head">
@@ -158,9 +205,10 @@
           <div class="section-head">
             <p class="eyebrow">Обоснование баллов</p>
             <h2>Основания оценок по технологиям</h2>
-            <p>Подробное обоснование хранится в `results/processed/scoring-justification.md`, а здесь показано в компактном раскрывающемся виде.</p>
+            <p>На странице показана компактная версия по технологиям. Полный markdown доступен как артефакт эксперимента.</p>
           </div>
           <div id="justification" class="justification-list"></div>
+          <a class="artifact-button inline-link" href="./source-viewer.html?file=artifacts%2Fresults%2Fprocessed%2Fscoring-justification.md">Открыть полный markdown</a>
         </div>
       </section>
 
@@ -197,6 +245,7 @@
           <div class="section-head">
             <p class="eyebrow">Рекомендации</p>
             <h2>Семь технологических вариантов</h2>
+            <p>В экспериментальном стенде реализованы пять технологий: Web Components, React, Vue.js, Svelte и Lit. Angular и гибридный подход используются в разделе практических рекомендаций как проектные варианты, но не входят в экспериментальную матрицу измерений.</p>
           </div>
           <div class="tech-grid">
             <article><span class="tag">Web Components</span><h3>Для переносимых компонентов и мультифреймворковых сред</h3><p>Выбирайте Web Components, если компоненты должны работать в разных технологических стеках, быть независимыми от конкретного фреймворка и сохранять стабильность при долгом жизненном цикле проекта.</p><ul><li>дизайн-системы;</li><li>встраиваемые виджеты;</li><li>микрофронтенд-среды.</li></ul></article>

@@ -219,6 +219,8 @@ main {
 .demo-grid,
 .chart-grid,
 .kv,
+.criteria-grid,
+.command-grid,
 .artifact-grid,
 .check-grid {
   display: grid;
@@ -229,13 +231,15 @@ main {
 
 .info-grid.three,
 .metric-notes,
-.tech-grid {
+.tech-grid,
+.criteria-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .info-grid article,
 .metric-notes article,
 .tech-grid article,
+.criteria-grid article,
 .demo-card,
 .kv div,
 .artifact-card,
@@ -249,6 +253,7 @@ main {
 .info-grid article,
 .metric-notes article,
 .tech-grid article,
+.criteria-grid article,
 .artifact-card {
   min-height: 230px;
   padding: 30px;
@@ -256,6 +261,7 @@ main {
 
 .info-grid p,
 .metric-notes span,
+.criteria-grid span,
 .tech-grid p,
 .tech-grid li,
 .demo-card p,
@@ -290,6 +296,33 @@ main {
   display: block;
   margin-bottom: 8px;
   font-size: 18px;
+}
+
+.criteria-grid article {
+  min-height: 150px;
+}
+
+.criteria-grid strong {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--accent-dark);
+  font-size: 28px;
+}
+
+.command-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.command-grid code {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 22px;
+  background: #f7faf7;
+  color: var(--accent-dark);
+  font-size: 18px;
+  font-weight: 900;
+  overflow-wrap: anywhere;
 }
 
 .demo-toolbar {
@@ -422,6 +455,20 @@ td strong {
   font-size: 14px;
   line-height: 1.6;
   white-space: pre-wrap;
+}
+
+.justification-list ul {
+  margin: 0;
+  padding: 0 22px 22px 44px;
+  border-top: 1px solid var(--line);
+}
+
+.justification-list li {
+  margin: 12px 0;
+}
+
+.inline-link {
+  margin-top: 18px;
 }
 
 .split-panel {
@@ -560,6 +607,7 @@ td strong {
 
   .info-grid.three,
   .metric-notes,
+  .criteria-grid,
   .tech-grid,
   .demo-grid,
   .artifact-grid {
@@ -615,6 +663,7 @@ td strong {
   .split-panel,
   .demo-toolbar,
   .chart-grid,
+  .command-grid,
   .check-grid {
     grid-template-columns: 1fr;
   }
@@ -644,6 +693,7 @@ td strong {
 
   .info-grid.three,
   .metric-notes,
+  .criteria-grid,
   .tech-grid,
   .demo-grid,
   .artifact-grid {

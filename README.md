@@ -15,6 +15,7 @@ npm install
 Собрать все реализации компонента:
 
 ```bash
+npm run install:apps
 npm run build:apps
 ```
 
@@ -38,6 +39,7 @@ npm run experiment
 Отдельные этапы можно запускать так:
 
 ```bash
+npm run install:apps
 npm run test:performance
 npm run test:style
 npm run test:integration
