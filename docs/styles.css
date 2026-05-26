@@ -167,14 +167,7 @@ main {
 .section-inner,
 .section-wide {
   margin: 0 auto;
-}
-
-.section-inner {
   width: min(1280px, calc(100vw - 64px));
-}
-
-.section-wide {
-  width: min(1800px, calc(100vw - 64px));
 }
 
 .section-card {
