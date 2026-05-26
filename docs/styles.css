@@ -63,6 +63,7 @@ a {
   font-weight: 800;
   text-decoration: none;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .top-nav a:hover,
@@ -314,6 +315,12 @@ select {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.demo-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 22px;
+}
+
 .demo-card {
   min-height: 170px;
   padding: 22px;
@@ -368,12 +375,23 @@ td strong {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.chart-grid img {
+.chart-card {
+  min-width: 0;
+  margin: 0;
+}
+
+.chart-card img {
   width: 100%;
   min-height: 260px;
   border: 1px solid var(--line);
   border-radius: 24px;
   background: #fff;
+}
+
+.chart-card figcaption {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
 }
 
 .justification-list {

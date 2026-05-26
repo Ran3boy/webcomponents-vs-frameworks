@@ -59,7 +59,7 @@
           <div class="section-head">
             <p class="eyebrow">Демонстрация компонента</p>
             <h2>Каталог с поиском, фильтром и сортировкой</h2>
-            <p>Демо использует 20 элементов из общего датасета. Сравниваемые реализации с тем же поведением находятся в `apps/`.</p>
+            <p>Демо использует 100 элементов из общего датасета. Сравниваемые реализации с тем же поведением находятся в `apps/`.</p>
           </div>
           <div class="demo-toolbar">
             <input id="demo-search" placeholder="Поиск по демо-каталогу" />
@@ -74,6 +74,9 @@
           </div>
           <p id="demo-count" class="muted"></p>
           <div id="demo-grid" class="demo-grid"></div>
+          <div class="demo-actions">
+            <button class="button" id="demo-more" type="button">Показать ещё</button>
+          </div>
         </div>
       </section>
 
@@ -93,7 +96,7 @@
           <div class="section-head">
             <p class="eyebrow">Технические метрики</p>
             <h2>Измерения после запуска `npm run experiment`</h2>
-            <p>Таблица строится из обработанных данных. Технические ключи остаются в CSV/JSON, но на сайте показаны русские названия и локализованные статусы.</p>
+            <p>Таблица строится из обработанных данных после запуска единого сценария эксперимента.</p>
           </div>
           <div class="metric-notes">
             <article><strong>Размер сборки</strong><span>Сумма размеров HTML, CSS и JS файлов в `dist/` после Vite build.</span></article>
@@ -117,10 +120,22 @@
             <p>SVG-файлы генерируются скриптом `npm run generate-charts`, а не рисуются вручную.</p>
           </div>
           <div class="chart-grid">
-            <img src="./charts/bundle-size.svg" alt="Диаграмма размера сборки" />
-            <img src="./charts/initial-render.svg" alt="Диаграмма первичного рендеринга" />
-            <img src="./charts/update-time.svg" alt="Диаграмма времени обновления" />
-            <img src="./charts/scoring-heatmap.svg" alt="Тепловая карта K1-K10" />
+            <figure class="chart-card">
+              <img src="./charts/bundle-size.svg" alt="Диаграмма размера сборки" />
+              <figcaption><a class="artifact-button" href="./charts/bundle-size.svg">Открыть диаграмму</a></figcaption>
+            </figure>
+            <figure class="chart-card">
+              <img src="./charts/initial-render.svg" alt="Диаграмма первичного рендеринга" />
+              <figcaption><a class="artifact-button" href="./charts/initial-render.svg">Открыть диаграмму</a></figcaption>
+            </figure>
+            <figure class="chart-card">
+              <img src="./charts/update-time.svg" alt="Диаграмма времени обновления" />
+              <figcaption><a class="artifact-button" href="./charts/update-time.svg">Открыть диаграмму</a></figcaption>
+            </figure>
+            <figure class="chart-card">
+              <img src="./charts/scoring-heatmap.svg" alt="Тепловая карта K1-K10" />
+              <figcaption><a class="artifact-button" href="./charts/scoring-heatmap.svg">Открыть диаграмму</a></figcaption>
+            </figure>
           </div>
         </div>
       </section>
@@ -257,7 +272,7 @@
           <div class="section-head">
             <p class="eyebrow">Артефакты эксперимента</p>
             <h2>Доказательная база</h2>
-            <p>Карточки ведут к копиям файлов внутри `docs/artifacts/`. Исходники открываются через просмотрщик, который отображает код как UTF-8 текст.</p>
+            <p>Карточки ведут к копиям файлов, по которым можно проверить исходники, raw-результаты, обработанные таблицы и матрицу оценивания.</p>
           </div>
           <div class="artifact-grid" id="evidence-links"></div>
         </div>

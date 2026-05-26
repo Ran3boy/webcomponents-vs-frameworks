@@ -4,7 +4,7 @@ import { scoringJustification } from "./data/scoringJustification.js";
 import { environmentInfo } from "./data/environment.js";
 import { demoDataset } from "./data/demoDataset.js";
 
-const demoItems = demoDataset.slice(0, 20);
+const demoItems = demoDataset.slice(0, 100);
 
 const technicalColumnLabels = {
   technology: "Технология",
@@ -285,6 +285,9 @@ function renderDemo() {
   const sort = document.getElementById("demo-sort");
   const grid = document.getElementById("demo-grid");
   const count = document.getElementById("demo-count");
+  const more = document.getElementById("demo-more");
+  const pageSize = 20;
+  let visibleCount = pageSize;
   const categories = [...new Set(demoItems.map((item) => item.category))];
   category.insertAdjacentHTML("beforeend", categories.map((item) => `<option value="${item}">${item}</option>`).join(""));
 
@@ -298,19 +301,30 @@ function renderDemo() {
         if (sort.value === "complexity") return b.complexity - a.complexity;
         return b.rating - a.rating;
       });
-    count.textContent = `Найдено: ${sorted.length}`;
-    grid.innerHTML = sorted.map((item) => `
+    const visibleItems = sorted.slice(0, visibleCount);
+    count.textContent = `Показано: ${visibleItems.length} из ${sorted.length}`;
+    grid.innerHTML = visibleItems.map((item) => `
       <article class="demo-card">
         <h3>${item.title}</h3>
         <p>${item.description}</p>
         <span class="pill">${item.category}</span>
       </article>
     `).join("");
+    more.hidden = visibleItems.length >= sorted.length;
   }
 
-  search.addEventListener("input", update);
-  category.addEventListener("change", update);
-  sort.addEventListener("change", update);
+  function resetAndUpdate() {
+    visibleCount = pageSize;
+    update();
+  }
+
+  search.addEventListener("input", resetAndUpdate);
+  category.addEventListener("change", resetAndUpdate);
+  sort.addEventListener("change", resetAndUpdate);
+  more.addEventListener("click", () => {
+    visibleCount += pageSize;
+    update();
+  });
   update();
 }
 
